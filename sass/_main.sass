@@ -1,2 +1,656 @@
 // Normally mainpage styles
- 
+.mainer
+	height: 508px
+	margin-bottom: 35px
+	background-image: url(../img/main-bg.jpg)
+	background-position: 50% 50%
+	background-repeat: no-repeat
+	background-size: cover 
+	.header
+		margin-bottom: 75px
+	.mainer__title
+		margin-bottom: 45px
+		padding: 25px 0 30px
+		background: rgb(0,176,220) 
+		background: rgba(0,176,220,.8) 
+		text-align: center
+		color: #FFF
+		text-transform: uppercase
+		line-height: 1.2
+		font-size: 18px 
+	.mainer__title-big
+		position: relative
+		padding: 0 0 20px
+		font-size: 72px
+		&:after
+			content: ""
+			position: absolute
+			bottom: 20px
+			left: 50%
+			width: 64px
+			height: 2px
+			margin-left: -32px
+			background: #FFF 
+	.mainer__logos
+		font-size: 0
+		text-align: center
+		li
+			display: inline-block
+			vertical-align: middle
+			margin-left: 20px
+			&:first-child
+				margin: 0
+
+.direction
+	text-align: center
+	.direction__title
+		margin-bottom: 20px 
+		text-transform: uppercase
+		line-height: 1.2
+	.direction__title-small
+		font-size: 18px
+	.direction__title-big
+		font-size: 72px
+	.direction__list
+		font-size: 0
+	.direction__item
+		display: inline-block
+		width: 33%
+		padding: 0 20px
+		vertical-align: top
+		+box
+	.direction__item-title
+		position: relative
+		min-height: 34px
+		margin-bottom: 35px
+		padding-bottom: 30px
+		border-bottom: 2px solid #eaebeb 
+		text-transform: uppercase
+		font-size: 14px
+		line-height: 1.2
+		&:after	
+			content: ""
+			position: absolute
+			bottom: -16px
+			left: 50%
+			margin-left: -8px
+			width: 16px
+			height: 16px
+			background: $bl 
+
+.icf
+	padding: 0 0 50px
+	background: $clb 
+	text-align: center
+	color: #FFF 
+	.icf__arr
+		position: relative
+		height: 120px 
+		margin-bottom: 40px
+		overflow: hidden
+	.icf__arr-in
+		position: absolute
+		bottom: 0
+		left: 50%
+		margin-left: -960px
+		+arr(1920, 120, #fff, b)
+		z-index: 2 
+	.icf__logo
+		position: absolute
+		top: 30px
+		left: 50%
+		margin-left: -28px
+		+s(logo-ico)
+		z-index: 4 
+	.icf__title
+		font-size: 72px
+		text-transform: uppercase
+		line-height: 1.2
+	.l-center
+		position: relative
+		z-index: 4 
+		& > .text
+			margin-bottom: 35px
+	.icf__list
+		+clr
+	.icf__item
+		float: left
+		width: 240px
+		margin-left: 36px
+		border: 2px solid transparent
+		padding: 20px 20px 25px
+		&:first-child
+			margin-left: 18px
+		.text + .icf__counter
+			margin-top: 40px
+		.text
+			height: 38px
+	.icf__item_border
+		border-color: #fff
+	.icf__counter
+		position: relative
+		padding-bottom: 30px
+		font-size: 36px
+		&:after
+			content: ""
+			position: absolute
+			bottom: 17px
+			left: 50%
+			width: 100px
+			height: 2px
+			margin-left: -50px
+			background: $bl  	
+	.text
+		color: #fff 		
+
+.actual
+	text-align: center
+	.actual__title
+		padding: 40px 0 20px
+		text-transform: uppercase
+		line-height: 1.2
+	.actual__title-small
+		font-size: 18px
+	.actual__title-big
+		font-size: 72px
+	.text
+		padding: 20px
+		border: 2px solid $bl
+
+.m-news
+	padding: 35px 0
+	&.m-news_company	
+		background: #F6F6F6 
+		.m-news__date
+			color: $bl
+			&:after
+				background: $cld
+		.m-news__item
+			&:hover
+				.m-news__date
+					color: $cld
+					&:after
+						background: $bl
+	.m-news__head
+		margin-bottom: 20px
+		+clr
+	.m-news__title
+		float: left
+		text-transform: uppercase
+		color: $bl
+		font-size: 16px
+		+tr(color .2s linear)
+	.m-news__all
+		float: right
+		a
+			text-transform: uppercase
+			color: $bl 
+			font-size: 12px
+	.m-news__list
+		+clr
+	.m-news__item
+		float: left
+		width: 460px
+		color: $cld 
+		&:first-child
+			width: 480px
+			margin-right: 20px
+		&:hover
+			.m-news__title
+				color: $bl 
+			.m-news__date
+				color: $bl 
+				&:after
+					background: $cld 
+	.m-news__date
+		position: relative
+		float: left
+		width: 115px
+		margin-right: 20px
+		line-height: 1
+		color: $cld
+		+tr(color .2s linear) 
+		&:after
+			content: ""
+			position: absolute
+			top: 50px
+			right: -10px
+			width: 136px
+			height: 2px
+			background: $bl
+			+rotate(-45) 
+			+tr(background .2s linear)
+		li
+			text-align: right
+			font-size: 48px
+			&:first-child
+				text-align: left
+	.m-news__data
+		display: table
+		.m-news__title
+			margin-bottom: 10px
+			color: $cld 
+
+.m-info
+	padding: 25px 0 60px 
+	+clr
+
+.m-expertise
+	float: left
+	width: 480px
+	margin-right: 20px
+	.m-expertise__title
+		margin-bottom: 15px
+		text-transform: uppercase
+		+tr(color .2s linear)
+		a
+			color: $bl
+			+tr(color .2s linear)
+			&:hover
+				color: $cld
+	.m-expertise__in
+		+clr
+		color: $cld 
+		&:hover
+			.m-expertise__pic
+				&:after	
+					border-color: $bl
+			.m-expertise__title
+				color: $bl 
+	.m-expertise__pic
+		position: relative
+		float: left
+		margin-right: 25px
+		font-size: 0
+		&:after
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			border: 2px solid transparent
+			+tr(border-color .2s linear)
+	.m-expertise__data
+		display: table
+	.m-expertise__date
+		margin-bottom: 10px
+		+fr
+
+.m-event
+	float: left
+	width: 460px
+	.m-event__title
+		margin-bottom: 15px
+		text-transform: uppercase
+		+tr(color .2s linear)
+		a
+			color: $cld 
+			+tr(color .2s linear)
+			&:hover
+				color: $bl 
+	> .m-event__title
+		color: $bl 
+	.m-event__in
+		+clr
+		color: $cld 
+		&:hover
+			.m-event__pic
+				&:after	
+					border-color: $bl
+			.m-event__title
+				color: $bl 
+			.m-event__time	
+				background: $cld 
+	.m-event__pic
+		position: relative
+		float: left
+		margin-right: 25px
+		font-size: 0
+		&:after
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			border: 2px solid transparent
+			+tr(border-color .2s linear)
+	.m-event__data
+		display: table
+	.m-event__date
+		+fr
+		font-size: 12px
+	.m-event__text
+		margin-bottom: 10px
+		+fr
+		line-height: 1.2
+		font-size: 12px
+		color: #666 
+	.m-event__details
+		position: relative
+		margin-bottom: 20px
+		z-index: 2 
+		.m-event__time, .m-event__title
+			display: inline-block
+			vertical-align: middle
+		.m-event__title
+			width: 240px
+			margin: 0
+	.m-event__time	
+		width: 68px
+		height: 68px
+		margin-right: 15px
+		margin-left: -59px 
+		background: $bl
+		border-radius: 50%
+		line-height: 68px
+		text-align: center
+		color: #FFF   
+		+tr(background .2s linear)
+
+.strengths
+	padding: 35px 0 60px 
+	background: $clb 
+	color: #FFF 
+	text-align: center
+	.strengths__title-big
+		font-size: 72px
+		line-height: 1.2
+		text-transform: uppercase
+	.strengths__list
+		margin-bottom: 40px
+		+clr
+	.strengths__item
+		float: left
+		width: 276px
+		border: 2px solid transparent
+		padding: 20px 20px 25px
+		text-align: left
+		.text + .strengths__head
+			margin-top: 55px
+	.strengths__item_border
+		border-color: #fff
+	.strengths__head
+		position: relative
+		padding-bottom: 20px
+		margin-bottom: 20px
+		overflow: hidden
+		line-height: 1.2
+		&:after
+			content: ""
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 100px
+			height: 2px
+			background: $bl 
+	.strengths__counter
+		float: left
+		width: 50px
+		font-size: 36px
+	.strengths__title
+		display: table
+		font-size: 18px
+		text-transform: uppercase
+	.strengths__title-small, .strengths__title-middle
+		position: relative
+		text-transform: uppercase
+		line-height: 1
+		&:before
+			content: ""
+			position: absolute
+			left: 50%
+			width: 100px
+			height: 2px
+			margin-left: -50px
+			background: #FFF 
+	.strengths__title-small
+		padding-top: 40px
+		margin-bottom: 10px
+		font-size: 18px
+		&:before
+			top: 0
+	.strengths__title-middle
+		margin-bottom: 25px
+		padding-bottom: 30px
+		font-size: 48px
+		&:before
+			bottom: 0
+		& + .text
+			padding: 0 40px
+	.text
+		color: #FFF 
+
+.say-about
+	position: relative
+	margin: 65px 0 75px
+	padding: 35px 20px 20px
+	border: 2px solid $cld
+	.say-about__slider
+		overflow: hidden
+	.say-about__item
+		width: 100%
+		overflow: hidden
+	.say-about__logo
+		float: left
+		margin-right: 20px 
+	.say-about__text
+		overflow: hidden
+		.text
+			margin-bottom: 10px
+			color: $cld
+	.say-about__author
+		font-size: 16px
+		text-transform: uppercase
+	.say-about__title
+		position: absolute
+		top: -18px
+		left: 0
+		right: 0
+		text-align: center
+		span
+			display: inline-block
+			padding: 0 25px
+			background: #FFF
+			text-transform: uppercase 
+			vertical-align: top
+			font-size: 30px 
+	.say-about__prev, .say-about__next
+		position: absolute
+		top: 65px
+		padding: 6px 9px 
+		border: 2px solid $cld
+		font-size: 0
+		+tr(background .2s linear)
+		i
+			display: block
+		&:hover
+			background: $cld 
+	.say-about__prev
+		left: -60px
+		i
+			+s(arr-left)
+		&:hover
+			i
+				+s(arr-left-h)
+	.say-about__next
+		right: -60px
+		i
+			+s(arr-right)
+		&:hover
+			i
+				+s(arr-right-h)
+
+.request
+	position: relative
+	padding: 25px 0 40px
+	margin-bottom: 75px
+	border: 2px solid $bl
+	text-align: center
+	.request__title
+		position: absolute
+		top: -18px
+		left: 0
+		right: 0
+		text-align: center
+		span
+			display: inline-block
+			padding: 0 25px
+			background: #FFF
+			text-transform: uppercase 
+			vertical-align: top
+			font-size: 30px 
+			color: $bl 
+	.request__info
+		font-size: 0
+	.request__phone, .request__send, .request__mail
+		display: inline-block
+		width: 285px
+		margin: 0 15px
+		vertical-align: middle
+		font-size: 18px
+		text-transform: uppercase
+		span
+			display: block
+	.request__send
+		a
+			display: block
+			padding: 23px 0 19px
+			background: $bl 
+			color: #FFF 
+			+tr(background .2s linear)
+			&:hover
+				background: $cld 
+	.request__mail
+		a
+			color: $cld
+			+tr(color .2s linear)
+			&:hover
+				color: $bl 
+	.text
+		margin-bottom: 30px
+		color: $cld 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -36,14 +36,451 @@
 //				display: none
 // ## fonts 
 // Save fonts to /css/fonts, after that write (eot, woff, ttf):
-// +font(book, cytiapro-black-webfont)  
-// =book
-// 	font-family: "book",arial,sans-serif 
++font(FuturaDemiC, FuturaDemiC)  
+=f
+	font-family: "FuturaDemiC", Arial, sans-serif 
+=fr
+	font-family: "Roboto", Arial, sans-serif 
 	
-body
-	font-size: 12px 
-	font-family: Arial, sans-serif 
-	line-height: 1.4
+$bl: #00b0dc
+$cld: #19223c
+$clb: #065071
 
+body
+	+f
+	font-size: 14px 
+	line-height: 1.4
+	color: $cld 
+a
+	text-decoration: none
+button, input, textarea
+	+f
+button
+	background: none 
 
 // common blocks      
+.l-center
+	width: 960px
+	margin: 0 auto
+	padding: 0 10px
+	
+.topper
+	background: $cld
+
+.nav
+	padding: 13px 0 12px
+	font-size: 0
+	text-align: justify
+	ul
+		&:after
+			content: ""
+			display: inline-block
+			width: 100%
+			vertical-align: top
+	li
+		position: relative
+		display: inline-block
+		vertical-align: top
+	a
+		display: block
+		text-transform: uppercase
+		color: #fff
+		font-size: 11px 
+		+tr(color .2s linear)
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			height: 0
+			background: #fff 
+			+tr(all .2s linear)
+		&:hover
+			&:before
+				top: -13px
+				height: 3px
+		&:active
+			&:before
+				background: $bl
+				height: 0 
+		&:active
+			color: $bl 
+		&.nav__home
+			position: relative
+			top: 1px
+			+s(home)
+			&:after
+				content: ""
+				display: block
+				+s(home-h)
+				opacity: 0 
+				+tr(opacity .2s linear)
+			&:hover
+				&:before
+					top: -14px
+			&:active
+				&:after
+					opacity: 1 
+
+.header
+	padding-top: 27px
+	+clr
+	.header__right
+		float: right
+		padding-top: 12px 
+		font-size: 0
+		.btn-border
+			margin-left: 40px
+	.header__phone
+		display: inline-block
+		padding-top: 2px
+		vertical-align: middle
+		font-size: 24px
+		color: $cld 
+
+.logo
+	float: left
+	+s(logo)
+
+.language
+	display: inline-block
+	padding-top: 2px
+	margin-left: 20px
+	vertical-align: middle
+	li
+		display: inline-block
+		margin-left: 15px
+		vertical-align: middle
+		&:first-child
+			margin: 0
+		&.is-active
+			a
+				color: $bl 
+				cursor: default
+				&:before
+					display: none
+	a
+		position: relative
+		text-transform: uppercase
+		font-size: 12px
+		color: $cld 
+		+tr(color .2s linear)
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			height: 0
+			background: $cld
+			+tr(all .2s linear)
+		&:hover 
+			&:before
+				top: -10px
+				height: 3px
+		&:active
+			color: $bl  
+			&:before
+				height: 0
+				background: $bl 
+
+.footer
+	padding: 30px 40px
+	background: $cld 		
+	color: #FFF 
+	.footer__layout
+		+clr
+	.footer__left
+		float: left
+		width: 705px
+	.footer__right
+		float: right
+		width: 210px
+	.footer__about
+		float: left
+		.text
+			float: left
+			width: 270px
+			margin-top: -3px
+			font-size: 12px
+	.footer__logo
+		float: left
+		margin-right: 25px
+		+s(logo-white)
+	.footer__subscribe
+		float: right
+		a
+			color: $bl
+			text-transform: uppercase
+			font-size: 12px 
+	.footer__info
+		margin-bottom: 12px
+		+clr
+	.footer__phone
+		float: left
+		line-height: 1
+		font-size: 16px 
+	.footer__order
+		margin-bottom: 30px
+		.btn-border
+			width: 100%
+	.nav
+		padding: 0 
+		margin-bottom: 25px
+	.language
+		float: right
+		padding: 0
+		a
+			color: #FFF 
+			&:before
+				background: #FFF 
+	.text
+		color: #FFF 
+
+.created
+	text-align: right
+	.created__title, .created__logo
+		display: inline-block
+		vertical-align: middle
+	.created__title
+		+fr
+		font-size: 12px
+	.created__logo
+		margin-left: 20px
+		+s(vintage)
+		&:before
+			content: ""
+			display: block
+			+s(vintage-h)
+			opacity: 0
+			+scale(1.4)
+			+tr(all .2s linear) 
+		&:hover
+			&:before
+				opacity: 1 
+				+scale(1)
+
+.btn-border
+	position: relative
+	display: inline-block
+	padding: 9px 20px 7px
+	border: 2px solid $cld
+	font-size: 12px
+	text-transform: uppercase
+	color: $cld 
+	vertical-align: middle
+	+box
+	+tr(color .2s linear)
+	overflow: visible
+	z-index: 2 
+	&:after
+		content: ""
+		position: absolute
+		top: 100%
+		bottom: 0
+		left: 0
+		right: 0
+		background: $cld 
+		+tr(top .2s linear)
+		z-index: -1 
+	&:hover
+		color: #FFF
+		&:after
+			top: 0
+	&.btn-border_white
+		border-color: #fff
+		color: #FFF 
+		&:after
+			background: #FFF
+		&:hover
+			color: $cld 
+		 
+.link
+	position: relative
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		height: 0
+		background: $bl
+		+tr(all .2s linear)
+	&:hover
+		&:before
+			top: -10px
+			height: 3px
+	&:active
+		&:before
+			height: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
