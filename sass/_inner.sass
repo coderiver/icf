@@ -19,7 +19,130 @@
 	text-transform: uppercase
 	text-align: center 
 	color: #FFF 
-
+	
+// rss
+.rss
+	width: 800px
+	margin: 0 auto 
+.rss__topper
+	margin-bottom: 40px
+	text-align: center
+	line-height: 1.6
+	+fr
+	font-size: 14px
+	color: $cld 	
+.rss__form
+	width: 359px
+	margin: 0 auto 84px
+	
+// contacts
+.contacts
+	position: relative
+	margin-top: -40px
+	height: 560px
+.contacts__popup
+	position: absolute
+	top: 38px
+	left: 50%
+	margin-left: -479px
+	width: 320px
+	padding: 30px
+	background: #f9f9f9
+	z-index: 2
+.contacts__row 
+	margin-top: 20px 
+	font-size: 12px
+	color: $cld
+	text-transform: uppercase
+	line-height: 1.5
+	&:first-child
+		margin-top: 0
+	span
+		color: #33c0e3
+	a
+		font-size: 12px
+		color: $cld
+		text-transform: uppercase
+		text-decoration: none	 	
+.map
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	z-index: 1
+	
+// artlicle
+.article
+	position: relative
+	padding-top: 35px
+	margin-bottom: 75px
+	&:before
+		content: ""
+		position: absolute
+		top: 35px
+		left: -63px
+		width: 136px
+		height: 2px
+		background: #00b0dc
+		+transform(rotate(-45deg))
+	p
+		font-size: 14px
+		+fr
+		color: #666
+		margin-bottom: 25px
+	q
+		position: relative
+		display: block
+		margin-bottom: 20px
+		padding-left: 87px
+		font-size: 18px
+		text-transform: uppercase
+		color: $cld
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 40px
+			+s(quotes)	
+	ul
+		padding: 0 14px
+		li
+			position: relative
+			padding-left: 28px
+			margin-bottom: 25px
+			font-size: 14px
+			+fr
+			color: #666
+			&:before
+				content: ""
+				position: absolute
+				top: 10px
+				left: 0
+				width: 5px
+				height: 5px
+				border-radius: 50%
+				background: #33c0e3  	 	
+.article__title
+	margin-bottom: 25px
+	padding-left: 40px 				
+	font-size: 18px
+	color: $cld
+	text-transform: uppercase
+.menu
+	background: #f7f7f7
+	padding: 30px
+.menu__item
+	margin-top: 20px
+	&:first-child
+		margin-top: 0
+	a
+		font-size: 12px
+		color: $cld
+		text-transform: uppercase
+		+transition(color 200ms)
+		&:hover
+			color: #33c0e3
 
 
 

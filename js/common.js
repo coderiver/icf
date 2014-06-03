@@ -6,6 +6,6 @@ head.ready(function() {
 	$(document).bind(event, function(e){
 		$(".js-popup").hide();
 	});
+	
 
-	console.log($('body').html());
 });
