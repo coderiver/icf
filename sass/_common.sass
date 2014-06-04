@@ -358,14 +358,103 @@ button
 	span
 		font-size: 12px
 		text-transform: uppercase
-		color: #999				
-							 	 
+		color: #999
+		
+// pagination
+.pag
+	margin-bottom: 60px						
+.pag__topper
+	+clr
+	padding-bottom: 12px
+	margin-bottom: 20px
+	border-bottom: 2px solid #eaebeb 							 	 
+.pag__prev, .pag__next
+	float: left
+	font-size: 10px
+	color: #999
+	text-transform: uppercase 
+.pag__next
+	float: right
+.pag__links
+	+clr
+.pag__before
+	position: relative
+	float: left
+	width: 190px
+	padding-left: 50px
+	font-size: 12px
+	text-transform: uppercase
+	color: $cld
+	i
+		position: absolute
+		top: 0
+		left: 0
+		width: 9px
+		height: 15px
+		padding: 6px 9px
+		border: 2px solid $cld
+		+transition(background 200ms linear) 
+		&:before
+			content: ""
+			position: absolute
+			top: 6px
+			left: 7px
+			+s(arr-left)
+	&:hover
+		i
+			background: $cld 
+			&:before
+				+s(arr-left-h)
+.pag__after
+	position: relative
+	float: right
+	width: 190px
+	text-align: right
+	padding-right: 50px
+	font-size: 12px
+	text-transform: uppercase
+	color: $cld
+	i
+		position: absolute
+		top: 0
+		right: 0
+		width: 9px
+		height: 15px
+		padding: 6px 9px
+		border: 2px solid $cld
+		+transition(background 200ms linear) 
+		&:before
+			content: ""
+			position: absolute
+			top: 6px
+			left: 7px
+			+s(arr-right)
+	&:hover
+		i
+			background: $cld 
+			&:before
+				+s(arr-right-h)
 
-
-
-
-
-
+//subscribe
+.subscribe
+	margin-bottom: 35px
+	background: #f8f8f8
+	padding: 25px
+	.title
+		margin-bottom: 13px
+		text-align: center
+	
+// btn
+.btn
+	display: block
+	width: 100%
+	height: 39px
+	line-height: 39px
+	background: $cld 
+	text-align: center
+	font-size: 12px
+	color: #fff
+	text-transform: uppercase 
 
 
 
