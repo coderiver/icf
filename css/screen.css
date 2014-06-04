@@ -321,7 +321,7 @@ button { background: none; }
 .request .request__phone span, .request .request__send span, .request .request__mail span { display: block; }
 .request .request__mail a { color: #19223c; -moz-transition: color 0.2s linear; -o-transition: color 0.2s linear; -webkit-transition: color 0.2s linear; transition: color 0.2s linear; }
 .request .request__mail a:hover { color: #00b0dc; }
-.request .text { margin-bottom: 30px; color: #19223c; }
+.request .text { width: 500px; margin: 0 auto 30px; color: #19223c; }
 
 .button { display: block; width: 100%; padding: 23px 0 19px; background: #00b0dc; font-size: 18px; text-transform: uppercase; color: white; -moz-transition: background 0.2s linear; -o-transition: background 0.2s linear; -webkit-transition: background 0.2s linear; transition: background 0.2s linear; }
 .button:hover { background: #19223c; }
