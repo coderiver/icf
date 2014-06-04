@@ -19,7 +19,8 @@
 	text-transform: uppercase
 	text-align: center 
 	color: #FFF 
-	
+	p
+		font-size: 18px
 // rss
 .rss
 	width: 800px
@@ -89,7 +90,7 @@
 	&.article_news
 		padding-top: 0
 		&:before
-			display: none	
+			display: none				
 	p
 		font-size: 14px
 		+fr
@@ -126,31 +127,55 @@
 				width: 5px
 				height: 5px
 				border-radius: 50%
-				background: #33c0e3  	 	
+				background: #33c0e3
+	.btn-border
+		margin-right: 30px			  	 	
 .article__title
 	margin-bottom: 25px
 	padding-left: 40px 				
 	font-size: 18px
 	color: $cld
 	text-transform: uppercase
+.article__time
+	position: relative 
+	padding-left: 118px
+.time
+	position: absolute
+	top: -45px
+	left: 0
+	width: 100px
+	height: 100px
+	line-height: 100px
+	border-radius: 50%
+	background: $bl
+	text-align: center
+	font-size: 24px
+	color: #fff		
 .article__img
 	font-size: 0
 	margin-bottom: 15px 
 	img
 		width: 100%	
-.article__topper 
+.article__topper
+	position: relative 
 	padding-bottom: 20px
 	border-bottom: 2px solid #eaebeb 
 	margin-bottom: 30px
+	.date
+		margin-bottom: 20px
 .title
-	margin-bottom: 10px
+	margin-bottom: 5px
 	font-size: 16px
 	color: $cld
 	text-transform: uppercase
 .date
 	font-size: 10px
 	color: $cld
-	+fr		 
+	+fr  	
+.article__author
+	+fr
+	font-size: 10px
+	color: #666			 
 .menu
 	background: #f7f7f7
 	padding: 30px
