@@ -380,60 +380,74 @@ button
 .pag__before
 	position: relative
 	float: left
+	width: 9px
+	height: 15px
+	margin-right: 19px
+	padding: 6px 9px
+	border: 2px solid $cld
+	+transition(background 200ms linear) 
+	&:before
+		content: ""
+		position: absolute
+		top: 6px
+		left: 8px
+		+s(arr-left)
+	&:hover
+		background: $cld 
+		&:before
+			+s(arr-left-h)
+.pag__article-prev, .pag__article-next
+	float: left
 	width: 190px
-	padding-left: 50px
 	font-size: 12px
 	text-transform: uppercase
 	color: $cld
-	i
-		position: absolute
-		top: 0
-		left: 0
-		width: 9px
-		height: 15px
-		padding: 6px 9px
-		border: 2px solid $cld
-		+transition(background 200ms linear) 
-		&:before
-			content: ""
-			position: absolute
-			top: 6px
-			left: 7px
-			+s(arr-left)
+	+transition(color 200ms linear)
 	&:hover
-		i
-			background: $cld 
-			&:before
-				+s(arr-left-h)
+		color: $bl
+.pag__article-next
+	float: right
+	text-align: right					
 .pag__after
 	position: relative
 	float: right
-	width: 190px
-	text-align: right
-	padding-right: 50px
-	font-size: 12px
-	text-transform: uppercase
-	color: $cld
-	i
+	width: 9px
+	height: 15px
+	margin-left: 19px
+	padding: 6px 9px
+	border: 2px solid $cld
+	+transition(background 200ms linear) 
+	&:before
+		content: ""
 		position: absolute
-		top: 0
-		right: 0
-		width: 9px
-		height: 15px
-		padding: 6px 9px
-		border: 2px solid $cld
-		+transition(background 200ms linear) 
-		&:before
-			content: ""
-			position: absolute
-			top: 6px
-			left: 7px
-			+s(arr-right)
+		top: 6px
+		left: 9px
+		+s(arr-right)
 	&:hover
-		i
-			background: $cld 
-			&:before
-				+s(arr-right-h)
+		background: $cld 
+		&:before
+			+s(arr-right-h)
+.pager 
+	overflow: hidden
+	text-align: center
+	ul
+		display: inline-block
+.pager__list
+	font-size: 0
+.pager__item
+	display: inline-block
+	vertical-align: middle
+	a
+		display: inline-block
+		padding: 3px
+		margin: 0 8px  
+		font-size: 16px
+		color: $cld
+		+transition(color 200ms linear) 
+		&:hover
+			color: $bl
+		&.is-active
+			color: $bl
 
 //subscribe
 .subscribe

@@ -132,17 +132,30 @@ button { background: none; }
 .pag__links { *zoom: 1; }
 .pag__links:after { content: " "; display: table; clear: both; }
 
-.pag__before { position: relative; float: left; width: 190px; padding-left: 50px; font-size: 12px; text-transform: uppercase; color: #19223c; }
-.pag__before i { position: absolute; top: 0; left: 0; width: 9px; height: 15px; padding: 6px 9px; border: 2px solid #19223c; -moz-transition: background 200ms linear; -o-transition: background 200ms linear; -webkit-transition: background 200ms linear; transition: background 200ms linear; }
-.pag__before i:before { content: ""; position: absolute; top: 6px; left: 7px; background: url('../img/icons-s1f6d203140.png') 0 -25px no-repeat; width: 9px; height: 15px; }
-.pag__before:hover i { background: #19223c; }
-.pag__before:hover i:before { background: url('../img/icons-s1f6d203140.png') 0 0 no-repeat; width: 9px; height: 15px; }
+.pag__before { position: relative; float: left; width: 9px; height: 15px; margin-right: 19px; padding: 6px 9px; border: 2px solid #19223c; -moz-transition: background 200ms linear; -o-transition: background 200ms linear; -webkit-transition: background 200ms linear; transition: background 200ms linear; }
+.pag__before:before { content: ""; position: absolute; top: 6px; left: 8px; background: url('../img/icons-s1f6d203140.png') 0 -25px no-repeat; width: 9px; height: 15px; }
+.pag__before:hover { background: #19223c; }
+.pag__before:hover:before { background: url('../img/icons-s1f6d203140.png') 0 0 no-repeat; width: 9px; height: 15px; }
 
-.pag__after { position: relative; float: right; width: 190px; text-align: right; padding-right: 50px; font-size: 12px; text-transform: uppercase; color: #19223c; }
-.pag__after i { position: absolute; top: 0; right: 0; width: 9px; height: 15px; padding: 6px 9px; border: 2px solid #19223c; -moz-transition: background 200ms linear; -o-transition: background 200ms linear; -webkit-transition: background 200ms linear; transition: background 200ms linear; }
-.pag__after i:before { content: ""; position: absolute; top: 6px; left: 7px; background: url('../img/icons-s1f6d203140.png') 0 -75px no-repeat; width: 9px; height: 15px; }
-.pag__after:hover i { background: #19223c; }
-.pag__after:hover i:before { background: url('../img/icons-s1f6d203140.png') 0 -50px no-repeat; width: 9px; height: 15px; }
+.pag__article-prev, .pag__article-next { float: left; width: 190px; font-size: 12px; text-transform: uppercase; color: #19223c; -moz-transition: color 200ms linear; -o-transition: color 200ms linear; -webkit-transition: color 200ms linear; transition: color 200ms linear; }
+.pag__article-prev:hover, .pag__article-next:hover { color: #00b0dc; }
+
+.pag__article-next { float: right; text-align: right; }
+
+.pag__after { position: relative; float: right; width: 9px; height: 15px; margin-left: 19px; padding: 6px 9px; border: 2px solid #19223c; -moz-transition: background 200ms linear; -o-transition: background 200ms linear; -webkit-transition: background 200ms linear; transition: background 200ms linear; }
+.pag__after:before { content: ""; position: absolute; top: 6px; left: 9px; background: url('../img/icons-s1f6d203140.png') 0 -75px no-repeat; width: 9px; height: 15px; }
+.pag__after:hover { background: #19223c; }
+.pag__after:hover:before { background: url('../img/icons-s1f6d203140.png') 0 -50px no-repeat; width: 9px; height: 15px; }
+
+.pager { overflow: hidden; text-align: center; }
+.pager ul { display: inline-block; }
+
+.pager__list { font-size: 0; }
+
+.pager__item { display: inline-block; vertical-align: middle; }
+.pager__item a { display: inline-block; padding: 3px; margin: 0 8px; font-size: 16px; color: #19223c; -moz-transition: color 200ms linear; -o-transition: color 200ms linear; -webkit-transition: color 200ms linear; transition: color 200ms linear; }
+.pager__item a:hover { color: #00b0dc; }
+.pager__item a.is-active { color: #00b0dc; }
 
 .subscribe { margin-bottom: 35px; background: #f8f8f8; padding: 25px; }
 .subscribe .title { margin-bottom: 13px; text-align: center; }
@@ -370,3 +383,12 @@ button { background: none; }
 .popular__link:hover { color: #00b0dc; }
 
 .video { height: 192px; margin-bottom: 15px; }
+
+.m-news__info { font-family: "Roboto", Arial, sans-serif; font-size: 14px; color: #19223c; }
+.m-news__info a { color: #33c0e3; }
+
+.m-news_inner { padding-top: 0; }
+.m-news_inner .text { clear: both; padding-top: 30px; line-height: 1.6; }
+.m-news_inner .m-news__item { width: auto; margin-top: 40px; }
+.m-news_inner .m-news__item:first-child { margin-top: 0; width: auto; }
+.m-news_inner .m-news__data { width: 340px; }
