@@ -150,7 +150,15 @@
 	background: $bl
 	text-align: center
 	font-size: 24px
-	color: #fff		
+	color: #fff
+	&.time_small
+		top: auto
+		bottom: 0px
+		left: 5px
+		width: 70px
+		height: 70px
+		line-height: 70px
+		font-size: 16px  			
 .article__img
 	font-size: 0
 	margin-bottom: 15px 
@@ -173,6 +181,7 @@
 	color: $cld
 	+fr  	
 .article__author
+	margin-bottom: 20px
 	+fr
 	font-size: 10px
 	color: #666			 
@@ -296,20 +305,117 @@
 	text-transform: uppercase
 	&:hover
 		color: $bl					
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.article_topper
+	padding-left: 40px
+	
+// event-list
+.event-list
+	margin-bottom: 35px
+	border-bottom: 2px solid #eaebeb  		 
+.event-list__title
+	margin-bottom: 20px 
+	font-size: 16px
+	text-transform: uppercase
+	color: $bl
+ul.event-list__list
+	padding: 0
+	li.event-list__item
+		padding-left: 0
+		+clr
+		&:before
+			display: none
+.event-list__left
+	position: relative
+	float: left
+	width: 80px
+	margin-right: 20px
+.event-list__img
+	font-size: 0
+	margin-bottom: 50px 
+	img
+		width: 100%
+.event-list__author
+	margin-bottom: 5px
+	+fr
+	font-size: 10px
+	color: #666	 		
+.event-list__link
+	display: inline-block
+	margin-bottom: 30px
+	font-size: 12px
+	color: $cld
+	+f
+	text-transform: uppercase
+	+transition(color 200ms)
+	&:hover
+		color: $bl
+.lectors
+	margin-bottom: 80px
+.lectors__title
+	font-size: 16px
+	color: $bl
+	text-transform: uppercase
+	margin-bottom: 25px
+ul.lectors__list
+	margin-left: -37px
+	padding: 0	 	
+	li.lectors__item
+		width: 280px
+		display: inline-block
+		vertical-align: top
+		margin-bottom: 30px
+		padding-left: 0
+		margin-left: 37px
+		+clr
+		img
+			float: left
+			width: 80px
+			margin-right: 25px
+		p
+			+f
+			color: #666
+			line-height: 1.2	
+		&:before
+			display: none	 
+.comments 
+	padding-top: 45px
+	border-top: 2px solid #eaebeb 
+.comments__title
+	font-size: 16px
+	color: $bl
+	text-transform: uppercase
+	margin-bottom: 25px	
+.comments__item
+	margin-bottom: 35px
+.comments__text
+	+fr
+	font-size: 10px
+	color: $cld
+	margin-bottom: 15px	
+.comments__author
+	+clr
+.comments__img
+	float: left
+	width: 48px
+	margin-right: 18px 
+	font-size: 0
+	img
+		width: 100% 
+.comments__info
+	width: 254px 
+.comments__name
+	font-size: 12px
+	text-transform: uppercase
+	color: $cld 
+.comments__about
+	+fr
+	font-size: 10px
+	color: #666
+	
+.calendar
+	padding: 17px 8px 8px
+	background: #f7f7f7
+	margin-bottom: 37px  	
 
 
 

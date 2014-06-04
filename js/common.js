@@ -7,5 +7,12 @@ head.ready(function() {
 		$(".js-popup").hide();
 	});
 	
+// datepicker
+	
+	$( "#datepicker" ).datepicker({
+		showOtherMonths: true,
+      	selectOtherMonths: false
+	});
+
 
 });
