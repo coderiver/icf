@@ -201,8 +201,76 @@
 			margin-top: 0
 			width: auto
 	.m-news__data
-		width: 340px				
-					
+		width: 340px
+//top
+.top
+	margin-bottom: 33px
+	padding-bottom: 33px 
+	border-bottom: 1px solid #eaebeb
+.top__title
+	margin-bottom: 5px
+	font-size: 16px
+	color: $cld
+	text-transform: uppercase	 		
+.top__list
+	font-size: 0
+.top__item
+	display: inline-block
+	vertical-align: top
+	width: 300px
+	margin-left: 30px
+	font-size: 14px
+	&:first-child
+		margin-left: 0
+.top__img
+	display: block
+	height: 140px
+	overflow: hidden
+	font-size: 0
+	margin-bottom: 15px
+	img
+		width: 100%
+		height: auto
+		min-height: 100%
+.top__link
+	font-size: 12px
+	color: $cld
+	text-transform: uppercase
+	+transition(color 200ms)
+	&:hover
+		color: $bl
+
+//expertise
+.expertise__item
+	margin-bottom: 40px
+.expertise__title
+	margin-bottom: 20px
+	text-transform: uppercase
+	font-size: 16px
+	color: $bl			
+.expertise__topper
+	+clr
+.expertise__img
+	float: left
+	display: block
+	width: 80px
+	margin-right: 24px
+	margin-bottom: 20px
+	font-size: 0
+	img
+		width: 100% 
+.expertise__date
+	margin-bottom: 15px
+	+fr
+	font-size: 14px
+	color: $cld			
+.expertise__link
+	font-size: 16px
+	color: $cld
+	+transition(color 200ms)
+	text-transform: uppercase
+	&:hover
+		color: $bl					
 
 
 
