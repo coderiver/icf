@@ -516,19 +516,238 @@ ul.lectors__list
 	+fr
 	color: #fff
 	font-size: 14px
-	line-height: 1.6		
+	line-height: 1.6
+	
+.or
+	display: inline-block
+	vertical-align: middle
+	margin-right: 75px
+	font-size: 18px
+	text-transform: uppercase
+	color: $bl 
+	
+//tabs
+.tab-wrap
+	margin-bottom: 35px
+.tab
+	+justify
+	margin-bottom: 15px
+.tab__item
+	+justify-child
+	a, span
+		text-align: left
+		font-size: 16px
+		text-transform: uppercase
+		color: $bl
+		+transition(color 200ms)
+		&:hover
+			color: $cld
+		&.is-active
+			color: $cld
+	span
+		cursor: pointer								
+.tab-cont
+	+justify
+	padding: 25px 0 35px
+	border-top: 2px solid #eaebeb
+	border-bottom: 2px solid #eaebeb 
+.jurisdictions__list
+	+justify-child
+	width: 280px
+.region
+	margin-bottom: 15px
+	font-size: 12px
+	color: $cld
+	text-transform: uppercase
+.region__title
+	color: $bl
+	font-size: 12px
+	margin-bottom: 20px
+.region__list
+	li
+		margin-bottom: 10px
+		a
+			color: $cld
+			text-transform: uppercase
+			text-decoration: none
+.imap
+	padding-bottom: 40px
+	border-bottom: 2px solid #eaebeb
+	margin-bottom: 35px
+.imap__title
+	font-size: 16px
+	color: $cld
+	text-transform: uppercase
+	margin-bottom: 13px
+.imap__controls
+	+clr
+	margin-bottom: 20px	
+.imap__btns
+	float: left
+	font-size: 0
+	li
+		display: inline-block
+		vertical-align: top
+		margin-right: 18px
+.imap__back
+	position: relative
+	float: right
+	padding-right: 45px
+	height: 31px
+	font-size: 12px
+	text-transform: uppercase
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		right: 0
+		width: 27px
+		height: 27px
+		border: 2px solid $cld
+		background: #fff
+		+transition(background 200ms) 
+	&:after
+		content: ""
+		position: absolute
+		top: 9px
+		right: 12px
+		+s(arr-left)
+	&:hover
+		&:before
+			background: $cld
+		&:after
+			+s(arr-left-h)	 		
+.imap-btn
+	display: block
+	+box
+	width: 210px
+	height: 34px
+	border: 2px solid #eaebeb
+	text-align: center
+	+transition(all 200ms) 
+	span
+		position: relative
+		display: inline-block
+		font-size: 12px
+		color: #ccc
+		text-transform: uppercase
+		+transition(all 200ms) 
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: -25px
+			width: 15px
+			height: 15px
+	&.imap-btn_blue
+		span
+			&:before
+				background: $bl
+		&.is-active
+			border: 2px solid $bl
+			span
+				color: $bl  		
+	&.imap-btn_dark
+		span
+			&:before
+				background: $cld
+		&.is-active
+			border: 2px solid $cld
+			span
+				color: $cld		
+	&.imap-btn_gray
+		span
+			&:before
+				background: #999
+		&.is-active
+			border: 2px solid #999
+			span
+				color: #999		 		 
+.imap__container
+	position: relative
+	height: 456px
+	overflow: hidden
+.imap__global
+	position: relative	
+	height: 456px
+	background: url(../img/imap.png) 0 0 no-repeat
+.imap__europe
+	position: relative
+	height: 456px
+	background: url(../img/europe.png) 0 0 no-repeat 	 
+.pin
+	position: absolute
+	cursor: pointer
+	&:hover
+		.pin__tooltip
+			visibility: visible
+			top: -30px
+			+opacity(1)
+.pin__tooltip
+	visibility: hidden
+	position: absolute
+	top: -30px
+	left: 50%
+	border: 2px solid $cld
+	padding: 2px 10px
+	color: $cld
+	text-transform: uppercase
+	font-size: 10px
+	+text-overflow
+	background: #fff 
+	top: -35px
+	+opacity(0)
+	+transition(all 200ms) 	
+.pin1
+	+s(pin1)
+.pin1-link
+	+s(pin1-link)
+.pin2
+	+s(pin2)
+.pin2-link
+	+s(pin2-link)
+.pin3
+	+s(pin3)
+.pin3-link
+	+s(pin3-link)			
 
-
-
-
-
-
-
-
-
-
-
-
+// pins coors	
+.caribi
+	top: 156px
+	left: 151px
+.usa
+	top: 100px
+	left: 120px
+.canada
+	top: 70px
+	left: 80px	
+.livia
+	top: 150px
+	left: 430px
+.china
+	top: 140px
+	right: 220px
+.europa
+	top: 60px
+	left: 425px
+.spain
+	top: 105px
+	left: 380px
+.france
+	top: 200px
+	left: 183px							 	
+.england
+	top: 170px
+	left: 100px
+.germany
+	top: 200px
+	left: 230px
+.poland
+	top: 208px
+	left: 283px
+.malta
+	top: 292px
+	left: 235px
 
 
 
