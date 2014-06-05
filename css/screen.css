@@ -325,6 +325,7 @@ button { background: none; }
 
 .button { display: block; width: 100%; padding: 23px 0 19px; background: #00b0dc; font-size: 18px; text-transform: uppercase; color: white; -moz-transition: background 0.2s linear; -o-transition: background 0.2s linear; -webkit-transition: background 0.2s linear; transition: background 0.2s linear; }
 .button:hover { background: #19223c; }
+.button.button_dark { background: #19223c; }
 
 .breadcrumbs { padding: 23px 0 10px; font-size: 0; }
 .breadcrumbs li { display: inline; font-size: 10px; text-transform: uppercase; }
@@ -490,3 +491,50 @@ ul.lectors__list li.lectors__item:before { display: none; }
 .comments__about { font-family: "Roboto", Arial, sans-serif; font-size: 10px; color: #666666; }
 
 .calendar { padding: 17px 8px 8px; background: #f7f7f7; margin-bottom: 37px; }
+
+.request_cols { margin-bottom: 45px; }
+.request_cols .request__info { *zoom: 1; padding: 0 65px; }
+.request_cols .request__info:after { content: " "; display: table; clear: both; }
+.request_cols .request__info .btn-border { margin-right: 10px; }
+
+.request__left { float: left; width: 380px; font-size: 14px; text-align: left; }
+.request__left p { font-family: "Roboto", Arial, sans-serif; text-transform: none; color: #19223c; font-size: 14px; }
+
+.request__right { float: right; width: 380px; font-size: 14px; text-align: left; }
+.request__right p { font-family: "Roboto", Arial, sans-serif; text-transform: none; font-size: 14px; }
+
+.request__content { min-height: 75px; }
+
+.phone { font-size: 18px; text-transform: uppercase; }
+
+.title2 { margin-bottom: 15px; text-align: center; font-size: 30px; text-transform: uppercase; color: #19223c; }
+
+.consulting { margin-bottom: 25px; text-align: center; }
+
+.consulting__text { margin-bottom: 25px; font-family: "Roboto", Arial, sans-serif; color: #19223c; }
+
+.consulting__btn { width: 359px; margin: 0 auto 60px; }
+
+.consulting__faq { *zoom: 1; }
+.consulting__faq:after { content: " "; display: table; clear: both; }
+
+.consulting__col { float: left; width: 440px; }
+.consulting__col.right { float: right; }
+
+.consulting__title { font-size: 16px; text-align: left; color: #00b0dc; margin-bottom: 25px; text-transform: uppercase; }
+
+.consulting__list { text-align: left; }
+.consulting__list li { margin-bottom: 25px; font-size: 12px; color: #19223c; text-transform: uppercase; }
+.consulting__list li:before { position: absolute; top: 0px; left: 0px; font-size: 12px; color: #00b0dc; }
+.consulting__list.list-numb { counter-reset: li; }
+.consulting__list.list-numb li { position: relative; padding-left: 30px; }
+.consulting__list.list-numb li:before { content: counter(li); counter-increment: li; }
+
+.icf_inner { margin-bottom: 60px; }
+
+.diff { text-align: center; }
+
+.diff__title { margin-bottom: 15px; color: white; font-size: 30px; text-transform: uppercase; }
+.diff__title span { font-size: 16px; }
+
+.diff__text { font-family: "Roboto", Arial, sans-serif; color: white; font-size: 14px; line-height: 1.6; }

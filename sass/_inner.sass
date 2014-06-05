@@ -18,7 +18,7 @@
 	font-size: 36px
 	text-transform: uppercase
 	text-align: center 
-	color: #FFF 
+	color: #FFF
 	p
 		font-size: 18px
 // rss
@@ -415,16 +415,108 @@ ul.lectors__list
 .calendar
 	padding: 17px 8px 8px
 	background: #f7f7f7
-	margin-bottom: 37px  	
+	margin-bottom: 37px
+.request_cols
+	margin-bottom: 45px
+	.request__info
+		+clr
+		padding: 0 65px
+		.btn-border
+			margin-right: 10px 
+.request__left
+	float: left
+	width: 380px
+	font-size: 14px
+	text-align: left
+	p
+		+fr
+		text-transform: none
+		color: $cld
+		font-size: 14px
+.request__right		
+	float: right
+	width: 380px
+	font-size: 14px
+	text-align: left
+	p
+		+fr
+		text-transform: none
+		font-size: 14px
+.request__content
+	min-height: 75px		
+.phone		
+	font-size: 18px
+	text-transform: uppercase
+.title2
+	margin-bottom: 15px
+	text-align: center
+	font-size: 30px
+	text-transform: uppercase
+	color: $cld
+.consulting
+	margin-bottom: 25px
+	text-align: center
+.consulting__text
+	margin-bottom: 25px
+	+fr
+	color: $cld
+.consulting__btn
+	width: 359px
+	margin: 0 auto 60px
+.consulting__faq
+	+clr	  
+.consulting__col
+	float: left
+	width: 440px
+	&.right
+		float: right
+.consulting__title
+	font-size: 16px
+	text-align: left
+	color: $bl
+	margin-bottom: 25px
+	text-transform: uppercase
+=list-numb
+	counter-reset: li
+	li
+		position: relative
+		padding-left: 30px
+		&:before
+			content: counter(li)
+			counter-increment: li	
+.consulting__list
+	text-align: left
+	li
+		margin-bottom: 25px
+		font-size: 12px
+		color: $cld
+		text-transform: uppercase  
+		&:before
+			position: absolute
+			top: 0px
+			left: 0px
+			font-size: 12px
+			color: $bl
+	&.list-numb
+		+list-numb
 
-
-
-
-
-
-
-
-
+//icf inner
+.icf_inner
+	margin-bottom: 60px
+.diff
+	text-align: center					
+.diff__title
+	margin-bottom: 15px
+	color: #fff
+	font-size: 30px
+	text-transform: uppercase
+	span
+		font-size: 16px
+.diff__text
+	+fr
+	color: #fff
+	font-size: 14px
+	line-height: 1.6		
 
 
 
