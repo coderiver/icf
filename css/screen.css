@@ -579,7 +579,8 @@ ul.lectors__list li.lectors__item:before { display: none; }
 .region__title { color: #00b0dc; font-size: 12px; margin-bottom: 20px; }
 
 .region__list li { margin-bottom: 10px; }
-.region__list li a { color: #19223c; text-transform: uppercase; text-decoration: none; }
+.region__list li a { color: #19223c; text-transform: uppercase; text-decoration: none; -moz-transition: color 200ms; -o-transition: color 200ms; -webkit-transition: color 200ms; transition: color 200ms; }
+.region__list li a:hover { color: #00b0dc; }
 
 .imap { padding-bottom: 40px; border-bottom: 2px solid #eaebeb; margin-bottom: 35px; }
 
