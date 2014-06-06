@@ -139,7 +139,15 @@ button
 					top: -14px
 			&:active
 				&:after
-					opacity: 1 
+					opacity: 1
+		&.is-active
+			color: $bl
+			&:hover
+				&:before
+					background: $bl 
+			&.nav__home
+				+s(home-h)
+
 
 .header
 	padding-top: 27px
@@ -360,6 +368,22 @@ button
 		font-size: 12px
 		color: #999
 		text-transform: uppercase
+.textarea
+	width: 100%
+	+box
+	margin-bottom: 16px
+	border: 2px solid #ccc
+	height: 82px
+	resize: none
+	padding: 5px
+	text-align: center
+	font-size: 14px
+	text-transform: uppercase 
+	+placeholder
+		text-align: center
+		font-size: 12px
+		color: #999
+		text-transform: uppercase  
 
 .checkbox
 	position: relative

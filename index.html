@@ -17,10 +17,10 @@
 			<!-- nav -->
 			<nav class="nav">
 				<ul>
-					<li><a class="nav__home" href="#"></a></li>
+					<li><a class="nav__home is-active" href="#"></a></li>
 					<li><a href="#">Услуги</a></li>
 					<li><a href="#">Консультации</a></li>
-					<li><a href="#">Мероприятия</a></li>
+					<li><a href="#" class="is-active">Мероприятия</a></li>
 					<li><a href="#">Экспертиза</a></li>
 					<li><a href="#">Новости</a></li>
 					<li><a href="#">О компании</a></li>
@@ -41,7 +41,7 @@
 						<li class="is-active"><a href="#">ру</a></li>
 						<li><a href="#">en</a></li>
 					</ul>
-					<button class="btn-border">Заказать консультацию</button>
+					<button class="btn-border js-consult">Заказать консультацию</button>
 				</div>
 			</div>
 		</div>
@@ -67,18 +67,18 @@
 				<div class="direction__title-big">направления</div>
 			</div>
 			<div class="direction__list">
-				<div class="direction__item">
+				<a href="#" class="direction__item">
 					<div class="direction__item-title">международное налоговое планирование</div>
 					<div class="text">Структурирование международного бизнеса и операций, выбор юрисдикций и регистрация иностранных компаний. Создание индивидуальных структур и схем. Комплексное юридическое обслуживание бизнеса.</div>
-				</div>
-				<div class="direction__item">
+				</a>
+				<a href="#" class="direction__item">
 					<div class="direction__item-title">Консультирование</div>
 					<div class="text">Практические советы и эффективные решения вопросов любой сложности, в кратчайшие сроки. Устное и письменное консультирование. Налоговое и корпоративное право. Защита активов и бизнес структурирование групп компаний. Консультации Online</div>
-				</div>
-				<div class="direction__item">
+				</a>
+				<a href="#" class="direction__item">
 					<div class="direction__item-title">Обучающие<br>семинары</div>
 					<div class="text">Подготовка собственников и персонала в сфере обращения с иностранными компаниями. Новости, изменения и тенденции в международном налоговом планировании.</div>
-				</div>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -305,7 +305,7 @@
 			<div class="request__info">
 				<div class="request__phone"><span>Позвоните нам</span>+38044 255 5767</div>
 				<div class="request__send">
-					<a href="#" class="button">оставить заявку</a>
+					<a href="#" class="button js-request">оставить заявку</a>
 				</div>
 				<div class="request__mail"><span>Напишите нам</span><a href="mailto:info@icf-ua.com">info@icf-ua.com</a></div>
 			</div>
@@ -359,6 +359,51 @@
 		</div>
 	</div>
 </div>
+<!-- BEGIN popups -->
+<!-- <div class="layout js-layout"></div> -->
+<div class="popup-wrap js-popup-consult">
+	<div class="popup js-popup">
+		<div class="popup__title">записаться на консультацию</div>
+		<div class="popup__content">
+			<form>
+				<input type="text" class="input" placeholder="ваш имя">
+				<input type="text" class="input" placeholder="ваш E-mail">
+				<input type="text" class="input" placeholder="ваш телефон">
+				<textarea class="textarea" placeholder="сообщение"></textarea>
+				<button class="button">подписаться</button>
+			</form>
+		</div>
+	</div>
+</div>
+<div class="popup-wrap js-popup-request">
+	<div class="popup js-popup">
+		<div class="popup__title">Подписка на мероприятия</div>
+		<div class="popup__content">
+			<form>
+				<input type="text" class="input" placeholder="ваше имя">
+				<input type="text" class="input" placeholder="ваш E-mail">
+				<label class="checkbox">
+					<input type="checkbox">
+					<i></i>
+					<span>Подписка на новости</span>
+				</label>
+				<label class="checkbox">
+					<input type="checkbox">
+					<i></i>
+					<span>Подписка на мероприятия</span>
+				</label>
+				<label class="checkbox">
+					<input type="checkbox">
+					<i></i>
+					<span>Подписка на экспертизу</span>
+				</label>
+				<button class="button">подписаться</button>	
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- END popups -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>
 </html>

@@ -1,11 +1,5 @@
 head.ready(function() {
 
-	var agent = navigator.userAgent,
-	event = (agent.match(/iPad/i)) ? "touchstart" : "click";
-
-	$(document).bind(event, function(e){
-		$(".js-popup").hide();
-	});
 	
 // datepicker
 	
@@ -113,9 +107,37 @@ head.ready(function() {
 		return false;
 	});
 
+// consulting popup
+	
+	$(".popup-wrap").hide();
 
+	$(".js-consult").on('click', function(){
+		
+		$(".js-popup-consult").fadeIn(400);
+		$(".js-popup").addClass('is-open');
+		return false;
+		
+	});
+	$(".js-request").on('click', function(){
+		
+		$(".js-popup-request").fadeIn(400);
+		$(".js-popup").addClass('is-open');
+		return false;
+		
+	});
 
+	$(".popup-wrap").on('click', function(e){
+		
+		$(".popup-wrap").fadeOut(400);
+		$(".js-popup").removeClass('is-open');
+	});
+	$(".js-popup").on('click', function(e){
+		e.stopPropagation();
+	});
 
+	$(window).scroll(function(){
+		
+	});
 
 
 });
