@@ -119,6 +119,12 @@ button { background: none; }
 .input::-moz-placeholder { font-size: 12px; color: #999999; text-transform: uppercase; }
 .input::-webkit-input-placeholder { font-size: 12px; color: #999999; text-transform: uppercase; }
 .input::placeholder { font-size: 12px; color: #999999; text-transform: uppercase; }
+.input.is-error { border-color: #dc0101; }
+.input.is-error:-ms-input-placeholder { color: #dc0101; }
+.input.is-error:-moz-placeholder { color: #dc0101; }
+.input.is-error::-moz-placeholder { color: #dc0101; }
+.input.is-error::-webkit-input-placeholder { color: #dc0101; }
+.input.is-error::placeholder { color: #dc0101; }
 
 .textarea { width: 100%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; margin-bottom: 16px; border: 2px solid #cccccc; height: 82px; resize: none; padding: 5px; text-align: center; font-size: 14px; text-transform: uppercase; }
 .textarea:-ms-input-placeholder { text-align: center; font-size: 12px; color: #999999; text-transform: uppercase; }
@@ -358,7 +364,8 @@ button { background: none; }
 .contacts__row { margin-top: 20px; font-size: 12px; color: #19223c; text-transform: uppercase; line-height: 1.5; }
 .contacts__row:first-child { margin-top: 0; }
 .contacts__row span { color: #33c0e3; }
-.contacts__row a { font-size: 12px; color: #19223c; text-transform: uppercase; text-decoration: none; }
+.contacts__row a { font-size: 12px; color: #19223c; text-transform: uppercase; text-decoration: none; -moz-transition: color 200ms; -o-transition: color 200ms; -webkit-transition: color 200ms; transition: color 200ms; }
+.contacts__row a:hover { color: #00b0dc; }
 
 .map { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 1; }
 

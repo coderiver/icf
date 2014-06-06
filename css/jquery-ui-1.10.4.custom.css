@@ -161,13 +161,24 @@
 	text-align: center;
 	padding: 1px;
 }
-.ui-datepicker td span,
-.ui-datepicker td a {
+.ui-datepicker td span{
 	display: block;
 	padding: 7px;
 	color: #19223c;
 	text-align: center;
+}
+.ui-datepicker td a {
+	display: inline-block;
+	width: 30px;
+	padding: 7px 0px;
+	color: #19223c;
+	text-align: center;
+	border-radius: 50%;
 	text-decoration: none;
+}
+.ui-datepicker td a:hover {
+	background: #00b0dc;
+	color: #fff;
 }
 .ui-datepicker td.ui-datepicker-other-month span {
 	color: #ccc;
