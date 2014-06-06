@@ -687,3 +687,17 @@ ul.lectors__list li.lectors__item:before { display: none; }
 
 .services__btn { display: inline-block; vertical-align: middle; padding: 9px 20px 7px; font-size: 12px; color: white; text-transform: uppercase; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; background: #00b0dc; -moz-transition: background 200ms; -o-transition: background 200ms; -webkit-transition: background 200ms; transition: background 200ms; }
 .services__btn:hover { background: #19223c; }
+
+.error-wrap { position: relative; }
+
+.error { text-align: center; padding-top: 100px; }
+
+.error__topper { height: 120px; padding-top: 80px; }
+.error__topper .logo { display: inline-block; float: none; }
+
+.error__content { height: 165px; padding-top: 35px; background: #00b0dc; font-size: 18px; color: white; text-transform: uppercase; }
+.error__content a { color: white; line-height: 1.2; text-decoration: underline; }
+.error__content a:hover { text-decoration: none; }
+
+.error__alert { position: relative; margin-bottom: 15px; font-size: 72px; text-transform: uppercase; color: white; }
+.error__alert:before { content: ""; position: absolute; bottom: 0; left: 50%; width: 66px; margin-left: -33px; height: 2px; background: white; }

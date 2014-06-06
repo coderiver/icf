@@ -879,9 +879,48 @@ ul.lectors__list
 	background: $bl
 	+transition(background 200ms)
 	&:hover
-		background: $cld 			 
-
-
+		background: $cld
+		
+//error
+.error-wrap
+	position: relative 
+.error
+	text-align: center
+	padding-top: 100px 		 			 
+.error__topper
+	height: 120px
+	padding-top: 80px
+	.logo
+		display: inline-block
+		float: none
+.error__content
+	height: 165px
+	padding-top: 35px
+	background: $bl
+	font-size: 18px
+	color: #fff
+	text-transform: uppercase
+	a
+		color: #fff
+		line-height: 1.2 
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+.error__alert
+	position: relative
+	margin-bottom: 15px
+	font-size: 72px
+	text-transform: uppercase
+	color: #fff
+	&:before
+		content: ""
+		position: absolute
+		bottom: 0
+		left: 50%
+		width: 66px
+		margin-left: -33px
+		height: 2px
+		background: #fff    
 
 
 
