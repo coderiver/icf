@@ -142,10 +142,12 @@ button { background: none; }
 
 .pag { margin-bottom: 60px; }
 
-.pag__topper { *zoom: 1; padding-bottom: 12px; margin-bottom: 20px; border-bottom: 2px solid #eaebeb; }
+.pag__topper { *zoom: 1; padding-bottom: 12px; margin-bottom: 20px; border-bottom: 2px solid #eaebeb; position: relative; }
 .pag__topper:after { content: " "; display: table; clear: both; }
 
-.pag__prev, .pag__next { float: left; font-size: 10px; color: #999999; text-transform: uppercase; }
+.pag__prev, .pag__next, .pag__center { float: left; font-size: 10px; color: #999999; text-transform: uppercase; }
+
+.pag__center { width: 300px; position: absolute; left: 50%; margin-left: -150px; text-align: center; color: #1db0da; }
 
 .pag__next { float: right; }
 
@@ -179,6 +181,8 @@ button { background: none; }
 
 .subscribe { margin-bottom: 35px; background: #f8f8f8; padding: 25px; }
 .subscribe .title { margin-bottom: 13px; text-align: center; }
+.subscribe .subscribe__more { display: block; text-align: center; margin-top: 10px; margin-bottom: -10px; }
+.subscribe .subscribe__more a { text-decoration: none; color: #3fc0e1; text-transform: uppercase; font-size: 11px; }
 
 .btn { display: block; width: 100%; height: 39px; line-height: 39px; background: #19223c; text-align: center; font-size: 12px; color: white; text-transform: uppercase; }
 
@@ -393,8 +397,17 @@ button { background: none; }
 .article__img { font-size: 0; margin-bottom: 15px; }
 .article__img img { width: 100%; }
 
-.article__topper { position: relative; padding-bottom: 20px; border-bottom: 2px solid #eaebeb; margin-bottom: 30px; }
-.article__topper .date { margin-bottom: 20px; }
+.article__topper, .expert { position: relative; padding-bottom: 20px; border-bottom: 2px solid #eaebeb; margin-bottom: 30px; }
+.article__topper .date, .expert .date { margin-bottom: 20px; }
+
+.expert { overflow: hidden; }
+.expert .expert__content { overflow: hidden; }
+.expert .expert__img { float: left; margin-right: 25px; }
+.expert .expert__about { margin-bottom: 18px; font-size: 11px; font-family: "Roboto", Arial, sans-serif; }
+.expert .expert__about dt { color: black; }
+.expert .expert__about dd { color: #666666; }
+.expert h3 { font-family: "FuturaDemiC", Arial, sans-serif; text-transform: uppercase; color: #19233e; font-weight: normal; line-height: 1.2; margin-bottom: 6px; }
+.expert h3 a { text-decoration: none; color: #19233e; }
 
 .title { margin-bottom: 5px; font-size: 16px; color: #19223c; text-transform: uppercase; }
 

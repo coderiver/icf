@@ -423,12 +423,20 @@ button
 	+clr
 	padding-bottom: 12px
 	margin-bottom: 20px
-	border-bottom: 2px solid #eaebeb 							 	 
-.pag__prev, .pag__next
+	border-bottom: 2px solid #eaebeb 	
+	position: relative						 	 
+.pag__prev, .pag__next,.pag__center
 	float: left
 	font-size: 10px
 	color: #999
 	text-transform: uppercase 
+.pag__center
+	width: 300px 
+	position: absolute
+	left: 50%
+	margin-left: -150px  
+	text-align: center
+	color: #1DB0DA 
 .pag__next
 	float: right
 .pag__links
@@ -513,6 +521,17 @@ button
 	.title
 		margin-bottom: 13px
 		text-align: center
+	.subscribe__more
+		display: block
+		text-align: center
+		margin-top: 10px 
+		margin-bottom: -10px 
+		a
+			text-decoration: none
+			color: #3FC0E1
+			text-transform: uppercase
+			font-size: 11px  
+			
 	
 // btn
 .btn
