@@ -81,6 +81,8 @@
 	position: relative
 	padding-top: 35px
 	margin-bottom: 75px
+	a
+		color: #00B0DC 
 	&:before
 		content: ""
 		position: absolute
@@ -203,9 +205,41 @@
 		+transition(color 200ms)
 		&:hover
 			color: #33c0e3
+.categs
+	padding: 20px 
+	border: 2px solid #1DB0DA 
+	margin-bottom: 45px 
+	h3
+		font-size: 13px 
+		text-transform: uppercase
+		color: #19233E
+		margin-bottom: 14px  
+	ul
+		list-style: none
+		font-size: 12px 
+		li
+			margin-bottom: 10px 
+		a
+			text-decoration: none
+			color: #19233E
+			text-transform: uppercase 
+	.is-active
+		color: #3FC0E1 
 .popular
 	.title
-		margin-bottom: 15px			
+		margin-bottom: 15px	
+	.btn-border
+		margin-top: 14px 	
+.popular_wide
+	.popular__item
+		overflow: hidden
+	.video
+		float: left
+		width: 300px 	
+		margin-right: 20px 
+	.popular__link
+		display: block
+		
 .popular__item
 	margin-bottom: 40px			
 .popular__link
