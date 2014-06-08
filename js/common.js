@@ -35,7 +35,7 @@ $('#datepicker').datepicker({
         }
     }
 });
-$( document ).tooltip({
+$( '.calendar td a' ).tooltip({
 	position: {
         my: "left bottom+40",
         at: "left bottom"
