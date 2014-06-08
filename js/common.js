@@ -3,10 +3,44 @@ head.ready(function() {
 	
 // datepicker
 	
-	$( "#datepicker" ).datepicker({
-		showOtherMonths: true,
-      	selectOtherMonths: false
-	});
+	// $( "#datepicker" ).datepicker({
+	// 	showOtherMonths: true,
+ //      	selectOtherMonths: false
+	// });
+
+
+
+var dates = {'2014/5/1':'some description|http://google.com' , '2014/6/6':'some other description|http://vintage.com.ua'}; 
+
+$('#datepicker').datepicker({                
+   beforeShowDay: function(date) {
+       var search = date.getFullYear() + "/" + (date.getMonth() + 1) + "/" + (date.getDate());
+       if (dates[search]) {
+           return [true, 'highlight', dates[search].split('|')[0] || ''];
+       }
+       return [false, '', ''];
+   },
+    onSelect: function(date) {        
+    	date = date.split('/');
+    	console.log(date);
+        //var date = new Date(date.slice(4)),
+        var m = parseFloat(date[1]),
+            d = parseFloat(date[0]),
+            y = parseFloat(date[2]);        
+            console.log(y + '/' + (m) + '/' + d);
+        if (dates[y + '/' + (m) + '/' + d]) {
+            myhref = dates[(y + '/' + (m) + '/' + d)].split('|');
+            window.location = myhref[1];
+            return false;
+        }
+    }
+});
+$( document ).tooltip({
+	position: {
+        my: "left bottom+40",
+        at: "left bottom"
+    	}
+});
 
 // tabs
 	function tab() {

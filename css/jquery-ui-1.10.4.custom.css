@@ -176,7 +176,7 @@
 	border-radius: 50%;
 	text-decoration: none;
 }
-.ui-datepicker td a:hover {
+.ui-datepicker td a:hover,.ui-datepicker td a {
 	background: #00b0dc;
 	color: #fff;
 }
@@ -270,4 +270,17 @@
 .ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
 	border-right-width: 0;
 	border-left-width: 1px;
+}
+
+
+.ui-tooltip {
+	padding: 8px 14px;
+	position: absolute;
+	z-index: 9999;
+	max-width: 300px;
+	background: #000;
+	background: rgba(0,0,0,.6);
+	color: #fff;
+	font-size: 12px;
+	margin-top: -10px;
 }

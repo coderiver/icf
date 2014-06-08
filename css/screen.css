@@ -100,6 +100,8 @@ button { background: none; }
 .btn-border:after { content: ""; position: absolute; top: 100%; bottom: 0; left: 0; right: 0; background: #19223c; -webkit-transition: top 0.2s linear; -moz-transition: top 0.2s linear; -o-transition: top 0.2s linear; transition: top 0.2s linear; z-index: -1; }
 .btn-border:hover { color: white; }
 .btn-border:hover:after { top: 0; }
+.btn-border.btn-border_dark { color: #333333; }
+.btn-border.btn-border_dark:hover { color: white; }
 .btn-border.btn-border_white { border-color: white; color: white; }
 .btn-border.btn-border_white:after { background: white; }
 .btn-border.btn-border_white:hover { color: #19223c; }
