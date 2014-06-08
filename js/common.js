@@ -159,6 +159,13 @@ $( '.calendar td a' ).tooltip({
 		return false;
 		
 	});
+	$(".js-pay").on('click', function(){
+		
+		$(".js-popup-pay").fadeIn(400);
+		$(".js-popup").addClass('is-open');
+		return false;
+		
+	});
 
 	$(".popup-wrap").on('click', function(e){
 		

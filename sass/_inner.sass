@@ -1023,12 +1023,50 @@ ul.lectors__list
 		+transform(scale(1))
 	.checkbox
 		text-align: left	
+	&.popup_pay
+		width: 836px - 90px
+		padding: 30px 45px 
+		text-align: left
+		.button
+			display: inline-block
+			width: 360px
+			text-align: center 
 .popup__title
 	margin-bottom: 15px
 	font-size: 16px
 	color: $cld
 	text-transform: uppercase	
+	.popup_pay &
+		text-align: left
+		font-size: 24px 
+		color: #1DB1DA 
 
+.field
+	+clr
+	margin-bottom: 16px 
+	font-size: 0 
+	.input
+		border-color: #19233E
+		width: 494px 
+		font-size: 12px 
+		margin-bottom: 0 
+	.input_half
+		width: 179px
+	label,input
+		display: inline-block
+		vertical-align: top
+	.field__label,.field__anotherlabel
+		display: inline-block
+		width: 162px 
+		+f
+		text-transform: uppercase
+		color: #19233E
+		font-size: 12px 
+		height: 35px
+		line-height: 35px 
+	.field__anotherlabel
+		width: 134px - 24px
+		padding-left: 24px 
 
 
 
