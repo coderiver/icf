@@ -662,7 +662,7 @@ ul.lectors__list li.lectors__item:before { display: none; }
 .pin { position: absolute; cursor: pointer; }
 .pin:hover .pin__tooltip { visibility: visible; top: -30px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
 
-.pin__tooltip { visibility: hidden; position: absolute; top: -30px; left: 50%; border: 2px solid #19223c; padding: 2px 10px; color: #19223c; text-transform: uppercase; font-size: 10px; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; background: white; top: -35px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; -webkit-transition: all 200ms; -moz-transition: all 200ms; -o-transition: all 200ms; transition: all 200ms; }
+.pin__tooltip { visibility: hidden; position: absolute; top: -30px; left: 50%; border: 2px solid #19223c; padding: 2px 10px; color: #19223c; text-transform: uppercase; font-size: 10px; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; background: white; top: -35px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; -webkit-transition: all 200ms; -moz-transition: all 200ms; -o-transition: all 200ms; transition: all 200ms; z-index: 99; }
 
 .pin1 { background: url('../img/icons-s22f80bfde0.png') 0 -133px no-repeat; width: 28px; height: 47px; }
 
@@ -676,21 +676,43 @@ ul.lectors__list li.lectors__item:before { display: none; }
 
 .pin3-link { background: url('../img/icons-s22f80bfde0.png') 0 -288px no-repeat; width: 21px; height: 31px; }
 
+.beliz { top: 181px; left: 119px; }
+
+.costa-rika { top: 200px; left: 133px; }
+
+.panama { top: 205px; left: 145px; }
+
+.man-island { top: 63px; left: 396px; }
+
+.jersy-island { top: 74px; left: 406px; }
+
+.oae { top: 167px; left: 565px; }
+
+.seishely { top: 267px; left: 550px; }
+
+.mavrikiy { top: 300px; left: 570px; }
+
+.marshall-islands { top: 220px; right: 64px; }
+
+.samoa { top: 308px; right: 20px; }
+
+.urugvay { top: 337px; left: 238px; }
+
+.honkong { top: 164px; right: 187px; }
+
+.singapour { top: 234px; right: 220px; }
+
+.newzeland { bottom: 34px; right: 50px; }
+
 .caribi { top: 156px; left: 151px; }
 
 .usa { top: 100px; left: 120px; }
 
 .canada { top: 70px; left: 80px; }
 
-.livia { top: 150px; left: 430px; }
-
 .china { top: 140px; right: 220px; }
 
 .europa { top: 60px; left: 425px; }
-
-.spain { top: 105px; left: 380px; }
-
-.france { top: 200px; left: 183px; }
 
 .england { top: 170px; left: 100px; }
 
@@ -699,6 +721,38 @@ ul.lectors__list li.lectors__item:before { display: none; }
 .poland { top: 208px; left: 283px; }
 
 .malta { top: 292px; left: 235px; }
+
+.netherlands { top: 150px; left: 203px; }
+
+.luksemburg { top: 188px; left: 188px; }
+
+.switzerland { top: 219px; left: 209px; }
+
+.spain { top: 270px; left: 100px; }
+
+.austria { top: 223px; left: 254px; }
+
+.denmark { top: 124px; left: 221px; }
+
+.sweden { top: 78px; left: 254px; }
+
+.finland { top: 72px; left: 313px; }
+
+.hibraltar { top: 301px; left: 122px; }
+
+.cyprus { top: 300px; left: 323px; }
+
+.bulgaria { top: 250px; left: 331px; }
+
+.romania { top: 226px; left: 346px; }
+
+.hungary { top: 223px; left: 314px; }
+
+.latvia { top: 150px; left: 315px; }
+
+.czech { top: 202px; left: 324px; }
+
+.estonia { top: 113px; left: 319px; }
 
 .m-news_sidebar { border-bottom: 2px solid #e7e6e6; margin-bottom: 35px; }
 .m-news_sidebar .m-news__item { width: auto; margin-right: 0; margin-bottom: 35px; }
