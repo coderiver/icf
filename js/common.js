@@ -183,6 +183,20 @@ $( '.calendar td a' ).tooltip({
 			el.addClass("is-shown"); 
 		} 
 	});
+	var options = {
+	  useEasing : true, 
+	  useGrouping : true, 
+	  separator : ',', 
+	  decimal : '.' 
+	}
+	function countme(){
+		$('.counter').each(function(index, val) {
+			 myid = $(this).attr('id');
+			 myto = $(this).text();
+			 var demo = new countUp(myid, 0,myto, 0, 3.5, options);
+			 demo.start();
+		});
+	}
 
 	$(window).scroll(function(event) {
 		$(".toshow").each(function(i, el) {
@@ -191,6 +205,22 @@ $( '.calendar td a' ).tooltip({
 				el.addClass("is-shown"); 
 			} 
 		});
+		if($('.actual').visible(true) && $('body').hasClass('notcounted')){
+			countme();
+			$('body').removeClass('notcounted')
+		}
 	});
+
+	function isTouchDevice() {
+	   var el = document.createElement('div');
+	   el.setAttribute('ongesturestart', 'return;'); // or try "ontouchstart"
+	   return typeof el.ongesturestart === "function";
+	}
+	if(isTouchDevice()){
+		$(".toshow").addClass("is-shown"); 
+	}
+
+
+	
 
 });
