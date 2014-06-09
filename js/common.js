@@ -176,9 +176,21 @@ $( '.calendar td a' ).tooltip({
 		e.stopPropagation();
 	});
 
-	$(window).scroll(function(){
-		
+
+	$(".toshow").each(function(i, el) {
+		var el = $(el);
+		if (el.visible(true)) {
+			el.addClass("is-shown"); 
+		} 
 	});
 
+	$(window).scroll(function(event) {
+		$(".toshow").each(function(i, el) {
+			var el = $(el);
+			if (el.visible(true)) {
+				el.addClass("is-shown"); 
+			} 
+		});
+	});
 
 });

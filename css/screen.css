@@ -192,6 +192,9 @@ button { background: none; }
 .btn.btn_blue { background: #00b0dc; }
 .btn.btn_blue:hover { background: white; color: #19223c; box-shadow: inset 0 0 0 2px #19223c; }
 
+.toshow { opacity: 0; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
+.toshow.is-shown { opacity: 1; }
+
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
 .l .l__column-1 { float: left; width: 600px; }
