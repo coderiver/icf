@@ -349,6 +349,7 @@ button { background: none; }
 .button { display: block; width: 100%; padding: 23px 0 19px; background: #00b0dc; font-size: 18px; text-transform: uppercase; color: white; -webkit-transition: background 0.2s linear; -moz-transition: background 0.2s linear; -o-transition: background 0.2s linear; transition: background 0.2s linear; }
 .button:hover { background: #19223c; }
 .button.button_dark { background: #19223c; }
+.button.button_dark:hover { background: #00b0dc; }
 
 .breadcrumbs { padding: 23px 0 10px; font-size: 0; }
 .breadcrumbs li { display: inline; font-size: 10px; text-transform: uppercase; }
@@ -568,10 +569,12 @@ ul.lectors__list li.lectors__item:before { display: none; }
 .consulting__col { float: left; width: 440px; }
 .consulting__col.right { float: right; }
 
-.consulting__title { font-size: 16px; text-align: left; color: #00b0dc; margin-bottom: 25px; text-transform: uppercase; }
+.consulting__title { font-size: 16px; text-align: left; color: #00b0dc; margin-bottom: 25px; text-transform: uppercase; color: #19223c; }
 
 .consulting__list { text-align: left; }
 .consulting__list li { margin-bottom: 25px; font-size: 12px; color: #19223c; text-transform: uppercase; }
+.consulting__list li a { color: #00b0dc; }
+.consulting__list li a:hover { color: #19223c; }
 .consulting__list li:before { position: absolute; top: 0px; left: 0px; font-size: 12px; color: #00b0dc; }
 .consulting__list.list-numb { counter-reset: li; }
 .consulting__list.list-numb li { position: relative; padding-left: 30px; }
