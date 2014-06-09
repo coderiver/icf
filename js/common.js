@@ -10,7 +10,7 @@ head.ready(function() {
 
 
 
-var dates = {'2014/5/1':'some description|http://google.com' , '2014/6/6':'some other description|http://vintage.com.ua'}; 
+var dates = {'2014/6/13':'some description|http://google.com' , '2014/6/6':'some other description|http://vintage.com.ua'}; 
 
 $('#datepicker').datepicker({                
    beforeShowDay: function(date) {

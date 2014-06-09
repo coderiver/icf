@@ -503,8 +503,8 @@ ul.event-list__list li.event-list__item:before { display: none; }
 
 .event-list__author { margin-bottom: 5px; font-family: "Roboto", Arial, sans-serif; font-size: 10px; color: #666666; }
 
-.event-list__link { display: inline-block; margin-bottom: 30px; font-size: 12px; color: #19223c; font-family: "FuturaDemiC", Arial, sans-serif; text-transform: uppercase; -webkit-transition: color 200ms; -moz-transition: color 200ms; -o-transition: color 200ms; transition: color 200ms; }
-.event-list__link:hover { color: #00b0dc; }
+.event-list .event-list__link { display: inline-block; margin-bottom: 30px; font-size: 12px; color: #19223c; font-family: "FuturaDemiC", Arial, sans-serif; text-transform: uppercase; -webkit-transition: color 200ms; -moz-transition: color 200ms; -o-transition: color 200ms; transition: color 200ms; }
+.event-list .event-list__link:hover { color: #00b0dc; }
 
 .lectors { margin-bottom: 80px; }
 
@@ -763,10 +763,10 @@ ul.lectors__list li.lectors__item:before { display: none; }
 .popup__title { margin-bottom: 15px; font-size: 16px; color: #19223c; text-transform: uppercase; }
 .popup_pay .popup__title { text-align: left; font-size: 24px; color: #1db1da; }
 
-.field { *zoom: 1; margin-bottom: 16px; font-size: 0; }
-.field:after { content: " "; display: table; clear: both; }
-.field .input { border-color: #19233e; width: 494px; font-size: 12px; margin-bottom: 0; background: transparent; text-align: left; padding-left: 10px; }
-.field .input_half { width: 179px; }
-.field label, .field input { display: inline-block; vertical-align: top; }
-.field .field__label, .field .field__anotherlabel { display: inline-block; width: 162px; font-family: "FuturaDemiC", Arial, sans-serif; text-transform: uppercase; color: #19233e; font-size: 12px; height: 35px; line-height: 35px; }
-.field .field__anotherlabel { width: 110px; padding-left: 24px; }
+.popup .field { *zoom: 1; margin-bottom: 16px; font-size: 0; }
+.popup .field:after { content: " "; display: table; clear: both; }
+.popup .field .input { border-color: #19233e; width: 494px; font-size: 12px; margin-bottom: 0; background: transparent; text-align: left; padding-left: 10px; }
+.popup .field .input_half { width: 179px; }
+.popup .field label, .popup .field input { display: inline-block; vertical-align: top; }
+.popup .field .field__label, .popup .field .field__anotherlabel { display: inline-block; width: 162px; font-family: "FuturaDemiC", Arial, sans-serif; text-transform: uppercase; color: #19233e; font-size: 12px; height: 35px; line-height: 35px; }
+.popup .field .field__anotherlabel { width: 110px; padding-left: 24px; }
