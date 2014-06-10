@@ -366,7 +366,7 @@ button { background: none; }
 .breadcrumbs a, .breadcrumbs span { color: #00b0dc; }
 .breadcrumbs span { padding: 0 3px; }
 
-.big-title { margin-bottom: 40px; padding: 35px 0 25px; background: #00b0dc; font-size: 36px; text-transform: uppercase; text-align: center; color: white; }
+.big-title { margin-bottom: 40px; padding: 35px 0 25px; background: #33c0e3; font-size: 36px; text-transform: uppercase; text-align: center; color: white; }
 .big-title p { font-size: 18px; }
 
 .rss { width: 800px; margin: 0 auto; }
