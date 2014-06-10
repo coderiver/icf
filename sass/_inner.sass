@@ -99,6 +99,8 @@
 	p
 		font-size: 14px
 		+fr
+		letter-spacing: 0.1px
+		line-height: 1.5  
 		color: #666
 		margin-bottom: 25px
 	q
@@ -162,8 +164,18 @@
 		left: 5px
 		width: 70px
 		height: 70px
-		line-height: 70px
-		font-size: 16px  			
+		line-height: 1.2
+		font-size: 14px
+		vertical-align: middle
+		&:before
+			content: ""
+			display: inline-block
+			width: 0
+			height: 100%
+			vertical-align: middle
+		span
+			display: inline-block
+			vertical-align: middle   			
 .article__img
 	font-size: 0
 	margin-bottom: 15px 
@@ -197,7 +209,6 @@
 		text-transform: uppercase
 		color: #19233E
 		font-weight: normal
-		line-height: 1.2
 		margin-bottom: 6px    
 		a
 			text-decoration: none
@@ -1002,6 +1013,8 @@ ul.lectors__list
 		background: url(../img/ptrn.jpg)
 	.l-center
 		+clr	 		
+	&:first-child
+		padding: 0 0 35px 	
 .services__bottom
 	padding: 35px 0 65px
 	text-align: center
@@ -1019,7 +1032,8 @@ ul.lectors__list
 	text-transform: uppercase 	 				
 .services__left
 	float: left
-	width: 300px
+	width: 250px
+	padding-right: 50px 
 .services__right
 	float: right
 	width: 640px 
@@ -1035,13 +1049,12 @@ ul.lectors__list
 				color: $cld
 .services__number
 	position: relative
-	margin-bottom: 18px
 	&:before
 		content: ""
 		position: absolute
-		top: 50px
+		top: 49px
 		left: -10px
-		width: 136px
+		width: 115px
 		height: 2px
 		background: $bl
 		+rotate(-45) 
@@ -1052,6 +1065,7 @@ ul.lectors__list
 		text-transform: uppercase
 		span
 			display: inline-block
+			vertical-align: top
 			padding-left: 68px
 			font-size: 18px
 .services__text

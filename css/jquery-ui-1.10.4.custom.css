@@ -169,8 +169,9 @@
 }
 .ui-datepicker td a {
 	display: inline-block;
-	width: 30px;
-	padding: 7px 0px;
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
 	color: #19223c;
 	text-align: center;
 	border-radius: 50%;
