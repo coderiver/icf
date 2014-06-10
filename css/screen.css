@@ -787,7 +787,7 @@ ul.lectors__list li.lectors__item:before { display: none; }
 
 .m-news_sidebar { border-bottom: 2px solid #e7e6e6; margin-bottom: 35px; }
 .m-news_sidebar .m-news__item { width: auto; margin-right: 0; margin-bottom: 35px; }
-.m-news_sidebar .m-news__date { width: 75px; }
+.m-news_sidebar .m-news__date { width: 75px; position: relative; left: 10px; }
 .m-news_sidebar .m-news__date:after { top: 31px; width: 89px; }
 .m-news_sidebar .m-news__date li { font-size: 30px; position: relative; left: -10px; }
 .m-news_sidebar .m-news__date li:first-child { position: relative; left: -10px; }
