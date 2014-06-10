@@ -254,7 +254,7 @@ button { background: none; }
 .m-news.m-news_company .m-news__item:hover .m-news__date:after { background: #00b0dc; }
 .m-news .m-news__head { margin-bottom: 20px; *zoom: 1; }
 .m-news .m-news__head:after { content: " "; display: table; clear: both; }
-.m-news .m-news__title { float: left; text-transform: uppercase; color: #00b0dc; font-size: 16px; -moz-transition: color 0.2s linear; -o-transition: color 0.2s linear; -webkit-transition: color 0.2s linear; transition: color 0.2s linear; }
+.m-news .m-news__title { float: left; text-transform: uppercase; color: #00b0dc; line-height: 1.6; font-size: 16px; -moz-transition: color 0.2s linear; -o-transition: color 0.2s linear; -webkit-transition: color 0.2s linear; transition: color 0.2s linear; }
 .m-news .m-news__all { float: right; }
 .m-news .m-news__list { *zoom: 1; }
 .m-news .m-news__list:after { content: " "; display: table; clear: both; }
@@ -264,8 +264,8 @@ button { background: none; }
 .m-news .m-news__item:hover .m-news__date { color: #00b0dc; }
 .m-news .m-news__item:hover .m-news__date:after { background: #19223c; }
 .m-news .m-news__date { position: relative; float: left; width: 115px; margin-right: 20px; line-height: 1; color: #19223c; -moz-transition: color 0.2s linear; -o-transition: color 0.2s linear; -webkit-transition: color 0.2s linear; transition: color 0.2s linear; }
-.m-news .m-news__date:after { content: ""; position: absolute; top: 50px; right: -10px; width: 136px; height: 2px; background: #00b0dc; -ms-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg); -moz-transition: background 0.2s linear; -o-transition: background 0.2s linear; -webkit-transition: background 0.2s linear; transition: background 0.2s linear; }
-.m-news .m-news__date li { text-align: right; font-size: 48px; }
+.m-news .m-news__date:after { content: ""; position: absolute; top: 46px; right: 6px; width: 111px; height: 2px; background: #00b0dc; -ms-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg); -moz-transition: background 0.2s linear; -o-transition: background 0.2s linear; -webkit-transition: background 0.2s linear; transition: background 0.2s linear; }
+.m-news .m-news__date li { text-align: right; font-size: 48px; height: 37px; }
 .m-news .m-news__date li:first-child { text-align: left; }
 .m-news .m-news__data { display: table; }
 .m-news .m-news__data .m-news__title { margin-bottom: 10px; color: #19223c; }
