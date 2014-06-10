@@ -210,6 +210,10 @@ button { background: none; }
 .mainer .mainer__logos { font-size: 0; text-align: center; }
 .mainer .mainer__logos li { display: inline-block; vertical-align: middle; margin-left: 20px; }
 .mainer .mainer__logos li:first-child { margin: 0; }
+.mainer .mainer__logos li img { top: 0; left: -30px; }
+.mainer .mainer__logos li img.is-shown { left: 0; }
+.mainer .mainer__logos li + li img { left: auto; right: -30px; }
+.mainer .mainer__logos li + li img.is-shown { right: 0; left: auto; }
 
 .direction { text-align: center; }
 .direction .direction__title { margin-bottom: 20px; text-transform: uppercase; line-height: 1.2; }

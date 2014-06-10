@@ -212,7 +212,7 @@ $( '.calendar td a' ).tooltip({
 				el.addClass("is-shown"); 
 			} 
 		});
-		if($('.actual').visible(true) && $('body').hasClass('notcounted')){
+		if($('.icf__list').visible(true) && $('body').hasClass('notcounted')){
 			countme();
 			$('body').removeClass('notcounted')
 		}

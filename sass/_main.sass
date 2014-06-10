@@ -45,6 +45,18 @@
 			margin-left: 20px
 			&:first-child
 				margin: 0
+			img
+				top: 0
+				left: -30px   
+				&.is-shown
+					left: 0 
+			&+li
+				img
+					left: auto 
+					right: -30px 
+					&.is-shown
+						right: 0 
+						left: auto
 
 .direction
 	text-align: center
