@@ -60,7 +60,7 @@ button { background: none; }
 .header .header__right .btn-border { margin-left: 40px; }
 .header .header__phone { display: inline-block; padding-top: 2px; vertical-align: middle; font-size: 24px; color: #19223c; }
 
-.logo { float: left; background: url('../img/icons-s24cdcc4562.png') 0 -394px no-repeat; width: 163px; height: 66px; position: relative; left: -20px; -moz-transition-delay: 0.3s !important; -o-transition-delay: 0.3s !important; -webkit-transition-delay: 0.3s !important; transition-delay: 0.3s !important; top: 0; }
+.logo { float: left; background: url('../img/icons-s24cdcc4562.png') 0 -394px no-repeat; width: 163px; height: 66px; position: relative; left: -20px; left: 0; -moz-transition-delay: 0.3s !important; -o-transition-delay: 0.3s !important; -webkit-transition-delay: 0.3s !important; transition-delay: 0.3s !important; top: 0; }
 .logo.is-shown { left: 0; }
 
 .language { display: inline-block; padding-top: 2px; margin-left: 20px; vertical-align: middle; }
