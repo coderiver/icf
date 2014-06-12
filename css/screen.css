@@ -34,6 +34,8 @@ button { background: none; }
 .l-center { width: 960px; margin: 0 auto; padding: 0 10px; }
 
 .topper { background: #19223c; }
+.option3 .topper { max-width: 1000px; margin: 0 auto; }
+.option4 .topper { max-width: 1400px; margin: 0 auto; }
 
 .nav { padding: 13px 0 12px; font-size: 0; text-align: justify; }
 .nav ul:after { content: ""; display: inline-block; width: 100%; vertical-align: top; }
@@ -53,7 +55,7 @@ button { background: none; }
 
 .header { padding-top: 27px; *zoom: 1; }
 .header:after { content: " "; display: table; clear: both; }
-.header .header__right { float: right; padding-top: 12px; font-size: 0; -moz-transition-delay: 0.6s !important; -o-transition-delay: 0.6s !important; -webkit-transition-delay: 0.6s !important; transition-delay: 0.6s !important; position: relative; right: -50px; top: 0; }
+.header .header__right { float: right; padding-top: 12px; font-size: 0; -moz-transition-delay: 0.6s !important; -o-transition-delay: 0.6s !important; -webkit-transition-delay: 0.6s !important; transition-delay: 0.6s !important; position: relative; right: -50px; right: 0; top: 0; }
 .header .header__right.is-shown { right: 0; }
 .header .header__right .btn-border { margin-left: 40px; }
 .header .header__phone { display: inline-block; padding-top: 2px; vertical-align: middle; font-size: 24px; color: #19223c; }
@@ -73,6 +75,8 @@ button { background: none; }
 .language a:active:before { height: 0; background: #00b0dc; }
 
 .footer { padding: 30px 40px; background: #19223c; color: white; }
+.option3 .footer { max-width: 960px; margin: 0 auto; }
+.option4 .footer { max-width: 1320px; margin: 0 auto; }
 .footer .footer__layout { *zoom: 1; }
 .footer .footer__layout:after { content: " "; display: table; clear: both; }
 .footer .footer__left { float: left; width: 705px; }
@@ -372,6 +376,8 @@ button { background: none; }
 
 .big-title { margin-bottom: 40px; padding: 35px 0 25px; background: #33c0e3; font-size: 36px; text-transform: uppercase; text-align: center; color: white; }
 .big-title p { font-size: 18px; }
+.option1 .big-title, .option3 .big-title { width: 960px; padding: 0; margin: 0 auto 40px auto; }
+.option2 .big-title, .option4 .big-title { max-width: 1400px; margin: 0 auto 40px auto; padding: 0; }
 
 .rss { width: 800px; margin: 0 auto; }
 
