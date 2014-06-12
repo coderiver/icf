@@ -91,9 +91,15 @@ button
 	width: 960px
 	margin: 0 auto
 	padding: 0 10px
-	
+.wraper
+	padding-top: 40px
 .topper
 	background: $cld
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%   
+	z-index: 200 
 	.option3 &
 		max-width: 1000px
 		margin: 0 auto
@@ -104,7 +110,7 @@ button
 
 
 .nav
-	padding: 13px 0 12px
+	padding: 11px 0 11px
 	font-size: 0
 	text-align: justify
 	ul
@@ -121,7 +127,8 @@ button
 		display: block
 		text-transform: uppercase
 		color: #fff
-		font-size: 11px 
+		font-size: 13px 
+		
 		+tr(color .2s linear)
 		&:before
 			content: ""

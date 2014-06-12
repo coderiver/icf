@@ -33,14 +33,16 @@ button { background: none; }
 
 .l-center { width: 960px; margin: 0 auto; padding: 0 10px; }
 
-.topper { background: #19223c; }
+.wraper { padding-top: 40px; }
+
+.topper { background: #19223c; position: fixed; top: 0; left: 0; width: 100%; z-index: 200; }
 .option3 .topper { max-width: 1000px; margin: 0 auto; }
 .option4 .topper { max-width: 1400px; margin: 0 auto; }
 
-.nav { padding: 13px 0 12px; font-size: 0; text-align: justify; }
+.nav { padding: 11px 0 11px; font-size: 0; text-align: justify; }
 .nav ul:after { content: ""; display: inline-block; width: 100%; vertical-align: top; }
 .nav li { position: relative; display: inline-block; vertical-align: top; }
-.nav a { display: block; text-transform: uppercase; color: white; font-size: 11px; -moz-transition: color 0.2s linear; -o-transition: color 0.2s linear; -webkit-transition: color 0.2s linear; transition: color 0.2s linear; }
+.nav a { display: block; text-transform: uppercase; color: white; font-size: 13px; -moz-transition: color 0.2s linear; -o-transition: color 0.2s linear; -webkit-transition: color 0.2s linear; transition: color 0.2s linear; }
 .nav a:before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 0; background: white; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; }
 .nav a:hover:before { top: -13px; height: 3px; }
 .nav a:active:before { background: #00b0dc; height: 0; }
@@ -374,7 +376,7 @@ button { background: none; }
 .breadcrumbs a, .breadcrumbs span { color: #00b0dc; }
 .breadcrumbs span { padding: 0 3px; }
 
-.big-title { margin-bottom: 40px; padding: 35px 0 25px; background: #33c0e3; font-size: 36px; text-transform: uppercase; text-align: center; color: white; }
+.big-title { margin-bottom: 40px; padding: 35px 0 25px; background: #33c0e3; font-size: 36px; text-transform: uppercase; text-align: center; color: white; width: 960px; padding: 0; margin: 0 auto 40px auto; }
 .big-title p { font-size: 18px; }
 .option1 .big-title, .option3 .big-title { width: 960px; padding: 0; margin: 0 auto 40px auto; }
 .option2 .big-title, .option4 .big-title { max-width: 1400px; margin: 0 auto 40px auto; padding: 0; }
@@ -402,11 +404,11 @@ button { background: none; }
 .article:before { content: ""; position: absolute; top: 35px; left: -63px; width: 136px; height: 2px; background: #00b0dc; -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
 .article.article_news { padding-top: 0; }
 .article.article_news:before { display: none; }
-.article p { font-size: 14px; font-family: "Roboto", Arial, sans-serif; letter-spacing: 0.1px; line-height: 1.6; color: #666666; margin-bottom: 25px; }
+.article p, .article li { font-size: 14px; font-family: "Roboto", Arial, sans-serif; letter-spacing: 0.1px; line-height: 1.6; color: #222222; margin-bottom: 25px; font-family: sans-serif; font-size: 15px; line-height: 1.75; }
 .article q { position: relative; display: block; margin-bottom: 20px; padding-left: 87px; font-size: 18px; text-transform: uppercase; color: #19223c; letter-spacing: 1px; }
 .article q:before { content: ""; position: absolute; top: 0; left: 40px; background: url('../img/icons-s24cdcc4562.png') 0 -764px no-repeat; width: 25px; height: 17px; }
 .article ul { padding: 0 14px; }
-.article ul li { position: relative; padding-left: 28px; margin-bottom: 25px; font-size: 14px; font-family: "Roboto", Arial, sans-serif; color: #666666; }
+.article ul li { position: relative; padding-left: 28px; margin-bottom: 25px; font-size: 15px; font-family: "Roboto", Arial, sans-serif; color: #222222; }
 .article ul li:before { content: ""; position: absolute; top: 10px; left: 0; width: 5px; height: 5px; border-radius: 50%; background: #33c0e3; }
 .article .btn-border { margin-right: 30px; }
 
