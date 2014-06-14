@@ -19,7 +19,7 @@ ul, ol { list-style-type: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
-@font-face { font-family: FuturaDemiC; src: url("fonts/FuturaDemiC.eot"); src: url("fonts/FuturaDemiC.eot?#iefix") format("embedded-opentype"), url("fonts/FuturaDemiC.woff") format("woff"), url("fonts/FuturaDemiC.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: FuturaDemiC; src: url("fonts/futurademic-webfont.eot"); src: url("fonts/futurademic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/futurademic-webfont.woff") format("woff"), url("fonts/futurademic-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 .toshow { opacity: 0; -moz-transition: all 0.3s linear; -o-transition: all 0.3s linear; -webkit-transition: all 0.3s linear; transition: all 0.3s linear; top: 30px; position: relative; -moz-transition-delay: 0.3s; -o-transition-delay: 0.3s; -webkit-transition-delay: 0.3s; transition-delay: 0.3s; }
 .toshow.is-shown { opacity: 1; top: 0; }
 
