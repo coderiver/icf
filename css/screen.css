@@ -208,7 +208,7 @@ button { background: none; }
 .l .l__column-1 { float: left; width: 600px; }
 .l .l__column-2 { float: right; width: 320px; margin-bottom: 50px; }
 
-.mainer { height: 508px; margin-bottom: 35px; background-image: url(../img/main-bg.jpg); background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; }
+.mainer { height: 508px; margin-bottom: 35px; background-image: url(../img/main-bg.jpg); background-position: 50% 50%; background-repeat: no-repeat; background-size: cover; width: 1000px; margin: 0 auto 35px auto; }
 .mainer .header { margin-bottom: 75px; }
 .mainer .mainer__title { margin-bottom: 45px; padding: 25px 0 30px; background: #00b0dc; background: rgba(0, 176, 220, 0.8); text-align: center; color: white; text-transform: uppercase; line-height: 1.2; font-size: 18px; position: relative; top: 50px; -moz-transition-delay: 0.9s !important; -o-transition-delay: 0.9s !important; -webkit-transition-delay: 0.9s !important; transition-delay: 0.9s !important; }
 .mainer .mainer__title.is-shown { top: 0; }
@@ -232,7 +232,7 @@ button { background: none; }
 .direction .direction__item-title { position: relative; min-height: 34px; margin-bottom: 35px; padding-bottom: 30px; border-bottom: 2px solid #eaebeb; text-transform: uppercase; color: #19223c; -moz-transition: color 200ms; -o-transition: color 200ms; -webkit-transition: color 200ms; transition: color 200ms; font-size: 14px; line-height: 1.2; }
 .direction .direction__item-title:after { content: ""; position: absolute; bottom: -16px; left: 50%; margin-left: -8px; width: 16px; height: 16px; background: #00b0dc; }
 
-.icf { padding: 0 0 50px; background: #065071; text-align: center; color: white; }
+.icf { padding: 0 0 50px; background: #065071; text-align: center; color: white; width: 1000px; margin: 0 auto; }
 .icf .icf__arr { position: relative; height: 120px; margin-bottom: 40px; overflow: hidden; }
 .icf .icf__arr-in { position: absolute; bottom: 0; left: 50%; margin-left: -960px; width: 0px; height: 0px; border-style: solid; border-width: 120px 960px 0 960px; border-color: white transparent transparent transparent; z-index: 2; }
 .icf .icf__logo { position: absolute; top: 30px; left: 50%; margin-left: -28px; background: url('../img/icons-s24cdcc4562.png') 0 -288px no-repeat; width: 56px; height: 55px; z-index: 4; }
@@ -316,7 +316,7 @@ button { background: none; }
 .m-event .m-event__details .m-event__title { width: 240px; margin: 0; }
 .m-event .m-event__time { width: 68px; height: 68px; margin-right: 15px; margin-left: -59px; background: #00b0dc; border-radius: 50%; line-height: 68px; text-align: center; color: white; -moz-transition: background 0.2s linear; -o-transition: background 0.2s linear; -webkit-transition: background 0.2s linear; transition: background 0.2s linear; }
 
-.strengths { padding: 35px 0 60px; background: #065071; color: white; text-align: center; }
+.strengths { padding: 35px 0 60px; background: #065071; color: white; text-align: center; width: 1000px; margin: 0 auto; }
 .strengths .strengths__title-big { font-size: 72px; line-height: 1.2; text-transform: uppercase; }
 .strengths .strengths__list { margin-bottom: 40px; *zoom: 1; }
 .strengths .strengths__list:after { content: " "; display: table; clear: both; }
@@ -387,7 +387,7 @@ button { background: none; }
 
 .rss__form { width: 359px; margin: 0 auto 84px; }
 
-.contacts { position: relative; margin-top: -40px; height: 560px; }
+.contacts { position: relative; margin-top: -40px; height: 560px; width: 960px; margin: -40px auto 0 auto; }
 
 .contacts__popup { position: absolute; top: 38px; left: 50%; margin-left: -479px; width: 320px; padding: 30px; background: #f9f9f9; z-index: 2; }
 
