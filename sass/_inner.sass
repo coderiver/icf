@@ -380,6 +380,8 @@
 			text-decoration: none
 			color: #19233E
 			text-transform: uppercase 
+			&:hover
+				opacity: .6 
 	.is-active
 		color: #3FC0E1 
 .popular
@@ -411,12 +413,16 @@
 .video
 	height: 192px
 	margin-bottom: 15px
+.backlink:hover
+	color: $clb 
 .m-news__info
 	+fr
 	font-size: 14px
 	color: $cld
 	a
 		color: #33c0e3
+		&:hover
+			color: $clb
 .m-news_inner
 	padding-top: 0 
 	.text
@@ -539,6 +545,7 @@ ul.event-list__list
 	color: #666	 		
 .event-list .event-list__link
 	display: inline-block
+	//display: block
 	margin-bottom: 30px
 	font-size: 12px
 	color: $cld
@@ -1116,7 +1123,8 @@ ul.lectors__list
 		margin-bottom: 24px
 	.expertise__link
 		font-size: 12px
-		
+.event-list__right
+	overflow: hidden
 // event-list
 .event-list_sidebar
 	.event-list__item
