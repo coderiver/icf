@@ -112,14 +112,15 @@ button
 .nav
 	padding: 11px 0 11px
 	font-size: 0
-	text-align: justify
 	ul
-		&:after
-			content: ""
-			display: inline-block
-			width: 100%
-			vertical-align: top
+		+justify
+		//&:after
+		//	content: ""
+		//	display: inline-block
+		//	width: 100%
+		//	vertical-align: top
 	li
+		+justify-child
 		position: relative
 		display: inline-block
 		vertical-align: top
@@ -128,7 +129,7 @@ button
 		text-transform: uppercase
 		color: #fff
 		font-size: 13px 
-		
+		text-align: left	
 		+tr(color .2s linear)
 		&:before
 			content: ""
