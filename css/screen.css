@@ -405,6 +405,7 @@ button { background: none; }
 .article.article_news { padding-top: 0; }
 .article.article_news:before { display: none; }
 .article p, .article li { font-size: 14px; font-family: "Roboto", Arial, sans-serif; letter-spacing: 0.1px; line-height: 1.6; color: #222222; color: #666666; margin-bottom: 25px; font-family: sans-serif; font-size: 15px; line-height: 1.75; }
+.article p { color: #222222; margin-bottom: 25px; font-family: sans-serif; font-size: 15px; line-height: 1.75; }
 .article q { position: relative; display: block; margin-bottom: 20px; padding-left: 87px; font-size: 18px; text-transform: uppercase; color: #19223c; letter-spacing: 1px; }
 .article q:before { content: ""; position: absolute; top: 0; left: 40px; background: url('../img/icons-s3fdc4b4f09.png') 0 -858px no-repeat; width: 25px; height: 17px; }
 .article blockquote { font-size: 14px; text-align: center; padding: 20px 30px; border: 2px solid #1db0da; margin: 20px 0; line-height: 22px; }
