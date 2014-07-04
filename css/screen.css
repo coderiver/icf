@@ -910,3 +910,8 @@ ul.lectors__list li.lectors__item:before { display: none; }
 .popup .field label, .popup .field input { display: inline-block; vertical-align: top; }
 .popup .field .field__label, .popup .field .field__anotherlabel { display: inline-block; width: 162px; font-family: "FuturaDemiC", Arial, sans-serif; text-transform: uppercase; color: #19233e; font-size: 12px; height: 35px; line-height: 35px; }
 .popup .field .field__anotherlabel { width: 110px; padding-left: 24px; }
+
+.thx { text-align: center; width: 530px; margin: 0 auto; font-size: 14px; color: #19233b; padding: 0 0 42px 0; font-weight: normal; font-family: sans-serif; }
+.thx p { margin-bottom: 20px; }
+.thx .thx__b { text-transform: uppercase; line-height: 30px; font-family: "FuturaDemiC", Arial, sans-serif; margin-bottom: 1em; }
+.thx .thx__b a { color: #19233b; text-decoration: none; }
