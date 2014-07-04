@@ -1303,6 +1303,12 @@ ul.lectors__list
 	+opacity(0)
 	+transform(scale(0.8))
 	background: #fff
+	.popup__error
+		text-transform: uppercase
+		color: #D90B16
+		display: inline-block
+		vertical-align: top
+		width: 300px  
 	.popup__content-10x
 		display: none
 	&.is-open
@@ -1329,8 +1335,9 @@ ul.lectors__list
 		background-size: contain  
 		.button
 			display: inline-block
-			width: 360px
+			width: 280px
 			text-align: center 
+			margin-right: 20px 
 .popup__title
 	margin-bottom: 15px
 	font-size: 16px
@@ -1353,6 +1360,8 @@ ul.lectors__list
 		background: transparent
 		text-align: left
 		padding-left: 10px   
+		&.is-error
+			border-color: #D90B16 
 	.input_half
 		width: 179px
 	label,input
