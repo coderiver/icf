@@ -1303,11 +1303,24 @@ ul.lectors__list
 	+opacity(0)
 	+transform(scale(0.8))
 	background: #fff
+	.popup__content-10x
+		display: none
 	&.is-open
 		+opacity(1)
 		+transform(scale(1))
+	&.is-thanku
+		.popup__content-form
+			display: none
+		.popup__content-10x
+			display: block
 	.checkbox
 		text-align: left	
+	.popup__thankyou
+		font-size: 13px 
+		text-align: center
+		padding-bottom: 10px 
+		text-transform: uppercase
+		line-height: 2 
 	&.popup_pay
 		width: 836px - 90px
 		padding: 30px 45px 
