@@ -8,7 +8,17 @@ head.ready(function() {
  //      	selectOtherMonths: false
 	// });
 
+$('.article dt').click(function(event) {
+	
+	
+	if($(this).next().is(":visible")){
 
+	}
+	else{
+		$(this).parent().children('dd').slideUp();
+	}
+	$(this).next().slideToggle();
+});
 
 var dates = {'2014/6/13':'some description|http://google.com' , '2014/6/6':'some other description|http://vintage.com.ua'}; 
 
