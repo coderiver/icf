@@ -184,7 +184,7 @@ $( '.calendar td a' ).tooltip({
 		
 	});
 
-	$(".popup-wrap").on('click', function(e){
+	$(".popup-wrap,.popup__close").on('click', function(e){
 		
 		$(".popup-wrap").fadeOut(400);
 		$(".js-popup").removeClass('is-open');
