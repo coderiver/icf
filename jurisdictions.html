@@ -7,6 +7,7 @@
 	<link rel="stylesheet" media="screen" href="css/jquery-ui-1.10.4.custom.css">
 	<link rel="stylesheet" media="screen" href="css/screen.css">
 	<link href='http://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" media="screen" href="css/upd.css">
   <link rel="shortcut icon" href="favicon.png" type="image/png">
 </head>
 <body>
@@ -291,9 +292,12 @@
 				<div class="imap__title">Карта юрисдикций</div>
 				<div class="imap__controls">
 					<ul class="imap__btns">
-						<li><button class="imap-btn imap-btn_blue is-active"><span>оффшорные</span></button></li>
-						<li><button class="imap-btn imap-btn_dark is-active"><span>низконалоговые</span></button></li>
-						<li><button class="imap-btn imap-btn_gray is-active"><span>престижные</span></button></li>
+            <li class="imap__pin-opt">
+              <i class="pin1-link"></i><span>открыть банк</span>
+            </li>
+						<li class="imap__pin-opt is-gray">
+              <i class="pin3"></i><span>открыть страну</span>
+            </li>
 					</ul>
 					<button class="imap__back js-region-back">карта мира</button>
 				</div>

@@ -1157,12 +1157,8 @@ ul.lectors__list
 	padding: 35px 0
 	&.dark
 		background: url(../img/ptrn.jpg)
-		.services__left,
-		.services__right
-			vertical-align: middle
 	.l-center
-		//+clr	 	
-		display: table	
+		+clr	 		
 	&:first-child
 		padding: 0 0 35px 	
 .services__bottom
@@ -1181,18 +1177,13 @@ ul.lectors__list
 	color: $cld
 	text-transform: uppercase 	 				
 .services__left
-	position: relative
-	display: table-cell
-	vertical-align: top
+	float: left
 	width: 250px
-	text-align: center
 	padding-right: 50px 
 .services__right
-	display: table-cell
-	vertical-align: top
+	float: right
 	width: 640px 
 .services__list
-	text-align: left
 	li
 		margin-bottom: 15px
 		a
@@ -1230,32 +1221,17 @@ ul.lectors__list
 	+fr
 	line-height: 1.6			
 .services__map
-	position: relative
-	//margin-top: 60px
-	//height: 177px
-	//background: url(../img/world.png) 0 0 no-repeat
+	height: 177px
+	background: url(../img/world.png) 0 0 no-repeat
 	vertical-align: middle
 	text-align: center
-	img
-		display: inline-block
-		//vertical-align: middle
-		max-width: 100%
-	&:after 
+	&:before
 		content: ""
 		display: inline-block
 		width: 0
 		height: 100%
-		vertical-align: middle	
-.services__btn-wrap
-	position: absolute
-	top: 50%
-	left: 0 
-	right: 50px
-	text-align: center
-	margin-top: -15px
+		vertical-align: middle	 	   			
 .services__btn
-	position: relative
-	z-index: 2
 	display: inline-block
 	vertical-align: middle
 	padding: 9px 20px 7px
