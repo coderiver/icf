@@ -96,10 +96,21 @@ $( '.calendar td a' ).tooltip({
 		$(".imap__europe").fadeIn('slow');
 		$(".js-region-back").fadeIn();
 	});
+
 	$(".js-caribi-region").on('click', function(){
 		$(".imap__global").hide();
 		$(".imap__carribian").fadeIn('slow');
 		$(".js-region-back").fadeIn();
+	});
+
+	$(".js-open-region").on('click', function(){
+		//alert();
+		var region = $(this).attr("href");
+		$(".imap__global").hide();
+		$(".js-region").hide();
+		$(".js-region-back").fadeIn();
+		$("."+region).fadeIn('slow');
+		return false;
 	});
 
 	$(".js-region-back").on('click', function(){

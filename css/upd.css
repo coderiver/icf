@@ -7,3 +7,6 @@
 .imap__btns i, .imap__btns span { display: inline-block; vertical-align: middle; }
 .imap__btns span { margin: -8px 0 0 6px; }
 .imap__btns .pin3 { margin-right: 3px; }
+
+.imap__map { position: relative; }
+.imap__map img { display: block; }
